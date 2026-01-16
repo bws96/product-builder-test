@@ -4,6 +4,16 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+#theme-toggle {
+  margin-top: 10px;
 }
 
 .lotto-set {
@@ -11,4 +21,8 @@ body {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+.dark-mode .lotto-set {
+  border-color: #555;
 }

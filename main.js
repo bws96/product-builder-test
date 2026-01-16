@@ -1,6 +1,7 @@
 
 const generateButton = document.getElementById('generate');
 const numbersDiv = document.getElementById('numbers');
+const themeToggleButton = document.getElementById('theme-toggle');
 
 generateButton.addEventListener('click', () => {
   numbersDiv.innerHTML = '';
@@ -21,3 +22,7 @@ function generateLottoNumbers() {
   }
   return Array.from(numbers).sort((a, b) => a - b);
 }
+
+themeToggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
