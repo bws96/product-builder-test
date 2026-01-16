@@ -1,1 +1,14 @@
-/* Add styles here */
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.lotto-set {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
