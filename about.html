@@ -10,47 +10,71 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="header-controls">
-      <button id="theme-toggle">🌙</button>
-      <select id="language-selector">
-        <option value="ko">한국어</option>
-        <option value="en">English</option>
-        <option value="ja">日本語</option>
-        <option value="zh">中文</option>
-      </select>
+    <div id="overlay"></div>
+    <div class="container">
+        <header class="site-header">
+            <a href="index.html" class="site-title">문장 생성기</a>
+            <button id="menu-toggle" class="menu-toggle-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </header>
+
+        <main>
+            <div class="main-content content-card">
+                <h1 data-i18n="aboutTitle">소개</h1>
+                <div class="box">
+                    <h2 data-i18n="aboutSubTitle1">우리의 미션</h2>
+                    <p data-i18n="aboutMission">
+                        '연애 · 사회생활 문장 생성기'는 단순한 문장 제공을 넘어, 사람들 사이의 소통을 더 쉽고 자신감 있게 만들어주는 것을 목표로 합니다. 우리는 많은 사람들이 중요한 순간에 적절한 표현을 찾지 못해 어려움을 겪는다는 것을 알고 있습니다. 저희는 이러한 장벽을 허물고, 사용자가 자신의 생각과 감정을 효과적으로 전달할 수 있도록 돕고자 합니다.
+                    </p>
+                </div>
+                <div class="box">
+                    <h2 data-i18n="aboutSubTitle2">무엇을 제공하나요?</h2>
+                    <p data-i18n="aboutOffer">
+                        저희 서비스는 '연애'와 '회사/사회생활'이라는 두 가지 주요 상황에 맞춰, '정중하게', '부드럽게', '솔직하게' 등 다양한 톤의 문장을 제공합니다. 각 문장은 심리학적, 사회적 맥락을 고려하여 신중하게 작성되었으며, 사용자가 어떤 상황에서도 자연스럽고 적절하게 소통할 수 있도록 설계되었습니다. 저희는 자동 생성된 콘텐츠가 아닌, 실제적인 가치를 제공하는 고품질의 콘텐츠를 제공하기 위해 노력합니다.
+                    </p>
+                </div>
+                <div class="box">
+                    <h2 data-i18n="aboutSubTitle3">개발자 소개</h2>
+                    <p data-i18n="aboutDeveloper">
+                        이 프로젝트는 1인 개발자에 의해 시작되었습니다. 사람들의 소통 방식에 깊은 관심을 가지고 있으며, 기술을 통해 긍정적인 사회적 변화를 만들 수 있다고 믿습니다. 사용자의 피드백을 소중히 여기며, 지속적인 업데이트를 통해 더 나은 서비스를 제공하기 위해 최선을 다하고 있습니다.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer" data-i18n="footer">
+            © 2026 문장 생성기
+        </footer>
     </div>
-    <nav class="navbar">
-      <a href="index.html" data-i18n="navHome">홈</a>
-      <a href="about.html" data-i18n="navAbout">소개</a>
-      <a href="contact.html" data-i18n="navContact">연락처</a>
-      <a href="privacy.html" data-i18n="navPrivacy">개인정보처리방침</a>
-    </nav>
-    <div class="main-content">
-        <h1 data-i18n="aboutTitle">소개</h1>
-        <div class="box">
-            <h2 data-i18n="aboutSubTitle1">우리의 미션</h2>
-            <p data-i18n="aboutMission">
-                '연애 · 사회생활 문장 생성기'는 단순한 문장 제공을 넘어, 사람들 사이의 소통을 더 쉽고 자신감 있게 만들어주는 것을 목표로 합니다. 우리는 많은 사람들이 중요한 순간에 적절한 표현을 찾지 못해 어려움을 겪는다는 것을 알고 있습니다. 저희는 이러한 장벽을 허물고, 사용자가 자신의 생각과 감정을 효과적으로 전달할 수 있도록 돕고자 합니다.
-            </p>
+
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <button id="close-sidebar-btn" class="close-btn">&times;</button>
         </div>
-        <div class="box">
-            <h2 data-i18n="aboutSubTitle2">무엇을 제공하나요?</h2>
-            <p data-i18n="aboutOffer">
-                저희 서비스는 '연애'와 '회사/사회생활'이라는 두 가지 주요 상황에 맞춰, '정중하게', '부드럽게', '솔직하게' 등 다양한 톤의 문장을 제공합니다. 각 문장은 심리학적, 사회적 맥락을 고려하여 신중하게 작성되었으며, 사용자가 어떤 상황에서도 자연스럽고 적절하게 소통할 수 있도록 설계되었습니다. 저희는 자동 생성된 콘텐츠가 아닌, 실제적인 가치를 제공하는 고품질의 콘텐츠를 제공하기 위해 노력합니다.
-            </p>
+        <nav class="sidebar-nav">
+            <a href="index.html" data-i18n="navHome">홈</a>
+            <a href="about.html" data-i18n="navAbout">소개</a>
+            <a href="contact.html" data-i18n="navContact">연락처</a>
+            <a href="privacy.html" data-i18n="navPrivacy">개인정보처리방침</a>
+        </nav>
+        <div class="sidebar-controls">
+            <div class="control-group">
+                <label>테마 변경</label>
+                <button id="theme-toggle">🌙</button>
+            </div>
+            <div class="control-group">
+                <label>언어 변경</label>
+                <select id="language-selector">
+                    <option value="ko">한국어</option>
+                    <option value="en">English</option>
+                    <option value="ja">日本語</option>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
         </div>
-        <div class="box">
-            <h2 data-i18n="aboutSubTitle3">개발자 소개</h2>
-            <p data-i18n="aboutDeveloper">
-                이 프로젝트는 1인 개발자에 의해 시작되었습니다. 사람들의 소통 방식에 깊은 관심을 가지고 있으며, 기술을 통해 긍정적인 사회적 변화를 만들 수 있다고 믿습니다. 사용자의 피드백을 소중히 여기며, 지속적인 업데이트를 통해 더 나은 서비스를 제공하기 위해 최선을 다하고 있습니다.
-            </p>
-        </div>
-    </div>
-    <div class="footer" data-i18n="footer">
-      © 2026 문장 생성기
-    </div>
-  </div>
-  <script src="main.js"></script>
+    </aside>
+
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,31 +1,60 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Sidebar elements
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const closeSidebarBtn = document.getElementById('close-sidebar-btn');
+    const overlay = document.getElementById('overlay');
+
+    // Theme and language elements
     const themeToggle = document.getElementById('theme-toggle');
     const languageSelector = document.getElementById('language-selector');
 
-    // Load saved theme from localStorage
-    if (localStorage.getItem('theme') === 'dark') {
-        document.body.classList.add('dark-mode');
-        themeToggle.innerText = '☀️';
-    }
+    // --- Sidebar Logic ---
+    const openSidebar = () => {
+        sidebar.classList.add('active');
+        overlay.classList.add('active');
+    };
 
-    themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
+    const closeSidebar = () => {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+    };
 
-        if (document.body.classList.contains('dark-mode')) {
-            localStorage.setItem('theme', 'dark');
+    menuToggle.addEventListener('click', openSidebar);
+    closeSidebarBtn.addEventListener('click', closeSidebar);
+    overlay.addEventListener('click', closeSidebar);
+
+    // --- Theme Logic ---
+    const applyTheme = (theme) => {
+        if (theme === 'dark') {
+            document.body.classList.add('dark-mode');
             themeToggle.innerText = '☀️';
         } else {
-            localStorage.setItem('theme', 'light');
+            document.body.classList.remove('dark-mode');
             themeToggle.innerText = '🌙';
         }
+    };
+
+    themeToggle.addEventListener('click', () => {
+        const newTheme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
+        localStorage.setItem('theme', newTheme);
+        applyTheme(newTheme);
     });
 
-    // Function to set the language
+    // Load saved theme from localStorage
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    applyTheme(savedTheme);
+
+    // --- Language Logic ---
     const setLanguage = (lang) => {
         const translation = translations[lang];
+        if (!translation) return;
+
         document.querySelectorAll('[data-i18n]').forEach(elem => {
             const key = elem.getAttribute('data-i18n');
-            elem.innerText = translation.ui[key];
+            if (translation.ui[key]) {
+                elem.innerText = translation.ui[key];
+            }
         });
         document.documentElement.lang = lang;
         localStorage.setItem('language', lang);
