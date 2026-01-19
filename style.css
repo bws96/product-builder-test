@@ -214,6 +214,14 @@ body.dark-mode .main-content .box h2 {
     border-bottom-color: #374151;
 }
 
+.main-content .box a {
+    color: #3b82f6; /* A strong blue for light mode */
+}
+
+body.dark-mode .main-content .box a {
+    color: #60a5fa; /* A lighter blue for dark mode */
+}
+
 /* Responsive adjustments for mobile */
 @media (max-width: 480px) {
   .container {
