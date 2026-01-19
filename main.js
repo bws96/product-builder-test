@@ -1,9 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     // Sidebar elements
     const menuToggle = document.getElementById('menu-toggle');
     const sidebar = document.getElementById('sidebar');
     const closeSidebarBtn = document.getElementById('close-sidebar-btn');
     const overlay = document.getElementById('overlay');
+
+    // Function to load header actions dynamically
+    async function loadHeaderActions() {
+        try {
+            const response = await fetch('_header_actions.html');
+            const html = await response.text();
+            document.querySelectorAll('#header-actions-placeholder').forEach(placeholder => {
+                placeholder.innerHTML = html;
+            });
+        } catch (error) {
+            console.error('Error loading header actions:', error);
+        }
+    }
+
+    // Load header actions before other elements that depend on them
+    await loadHeaderActions();
 
     // Theme and language elements
     const themeToggle = document.getElementById('theme-toggle');
