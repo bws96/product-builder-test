@@ -44,22 +44,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     const applyTheme = (theme) => {
         if (theme === 'dark') {
             document.body.classList.add('dark-mode');
-            themeToggle.innerText = '☀️';
+            if (themeToggle) themeToggle.innerText = '☀️';
         } else {
             document.body.classList.remove('dark-mode');
-            themeToggle.innerText = '🌙';
+            if (themeToggle) themeToggle.innerText = '🌙';
         }
     };
-
-    themeToggle.addEventListener('click', () => {
-        const newTheme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
-        localStorage.setItem('theme', newTheme);
-        applyTheme(newTheme);
-    });
-
-    // Load saved theme from localStorage
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    applyTheme(savedTheme);
 
     // --- Language Logic ---
     const setLanguage = (lang) => {
@@ -72,17 +62,45 @@ document.addEventListener('DOMContentLoaded', async () => {
                 elem.innerText = translation.ui[key];
             }
         });
+        
+        const pageKey = document.body.dataset.page;
+        if (pageKey && translations[lang].pages[pageKey]) {
+            const pageTranslations = translations[lang].pages[pageKey];
+            if (pageTranslations.title) {
+                document.title = pageTranslations.title;
+            }
+            if (pageTranslations.description) {
+                document.querySelector('meta[name="description"]').setAttribute('content', pageTranslations.description);
+            }
+        }
+
         document.documentElement.lang = lang;
         localStorage.setItem('language', lang);
     };
 
-    languageSelector.addEventListener('change', (event) => {
-        setLanguage(event.target.value);
-    });
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const newTheme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
+            localStorage.setItem('theme', newTheme);
+            applyTheme(newTheme);
+        });
+    }
+
+    if (languageSelector) {
+        languageSelector.addEventListener('change', (event) => {
+            setLanguage(event.target.value);
+        });
+    }
+
+    // Load saved theme from localStorage
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    applyTheme(savedTheme);
 
     // Load saved language or default to Korean
     const savedLang = localStorage.getItem('language') || 'ko';
-    languageSelector.value = savedLang;
+    if (languageSelector) {
+        languageSelector.value = savedLang;
+    }
     setLanguage(savedLang);
 });
 
@@ -94,8 +112,6 @@ const translations = {
       navAbout: "소개",
       navContact: "연락처",
       navPrivacy: "개인정보처리방침",
-      title: "연애 · 사회생활 문장 생성기",
-      description: "어색한 상황에서 바로 써먹을 문장을 만들어드립니다",
       categoryLabel: "상황 선택",
       categoryLove: "연애",
       categoryWork: "회사 / 사회생활",
@@ -129,7 +145,26 @@ const translations = {
       privacySubTitle3: "3. 개인정보의 보유 및 이용기간",
       privacyRetention: "사용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다. 단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우, 회사는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다.",
       privacySubTitle4: "4. 개인정보 처리방침의 변경",
-      privacyChanges: "본 개인정보처리방침은 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다."
+      privacyChanges: "본 개인정보처리방침은 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.",
+      privacyEffectiveDate: "시행일자: 2026년 1월 19일"
+    },
+    pages: {
+        index: {
+            title: "연애 · 사회생활 문장 생성기",
+            description: "연애, 회사, 인간관계에서 바로 써먹는 문장을 랜덤으로 생성해드립니다."
+        },
+        about: {
+            title: "소개 - 연애 · 사회생활 문장 생성기",
+            description: "연애 · 사회생활 문장 생성기 프로젝트의 목적과 비전에 대해 알아보세요."
+        },
+        contact: {
+            title: "연락처 - 연애 · 사회생활 문장 생성기",
+            description: "피드백, 제안, 문의사항이 있으시면 언제든지 연락주세요."
+        },
+        privacy: {
+            title: "개인정보처리방침 - 연애 · 사회생활 문장 생성기",
+            description: "저희 서비스의 개인정보 수집 및 이용 방침에 대해 안내합니다."
+        }
     },
     sentences: {
         love: {
@@ -277,8 +312,6 @@ const translations = {
       navAbout: "About",
       navContact: "Contact",
       navPrivacy: "Privacy Policy",
-      title: "Sentence Generator for Love & Work",
-      description: "We create sentences you can use right away in awkward situations.",
       categoryLabel: "Select Situation",
       categoryLove: "Love",
       categoryWork: "Work / Social Life",
@@ -312,7 +345,26 @@ const translations = {
       privacySubTitle3: "3. Period of Retention and Use of Personal Information",
       privacyRetention: "In principle, your personal information is destroyed without delay when the purpose of its collection and use has been achieved. However, if it is necessary to preserve it in accordance with the provisions of relevant laws and regulations, the company shall store member information for a certain period of time as stipulated by the relevant laws and regulations.",
       privacySubTitle4: "4. Changes to the Privacy Policy",
-      privacyChanges: "Any additions, deletions, or corrections to this Privacy Policy in accordance with changes in laws and policies will be announced through the website's notice board (or individual notices)."
+      privacyChanges: "Any additions, deletions, or corrections to this Privacy Policy in accordance with changes in laws and policies will be announced through the website's notice board (or individual notices).",
+      privacyEffectiveDate: "Effective Date: January 19, 2026"
+    },
+    pages: {
+        index: {
+            title: "Sentence Generator for Love & Work",
+            description: "We create sentences you can use right away in awkward situations."
+        },
+        about: {
+            title: "About - Sentence Generator for Love & Work",
+            description: "Learn about the purpose and vision of the Sentence Generator project."
+        },
+        contact: {
+            title: "Contact - Sentence Generator for Love & Work",
+            description: "Feel free to contact us with any feedback, suggestions, or inquiries."
+        },
+        privacy: {
+            title: "Privacy Policy - Sentence Generator for Love & Work",
+            description: "This page outlines our policies regarding the collection, use, and disclosure of personal information."
+        }
     },
     sentences: {
         love: {
@@ -460,8 +512,6 @@ const translations = {
       navAbout: "紹介",
       navContact: "連絡先",
       navPrivacy: "プライバシーポリシー",
-      title: "恋愛・社会生活 文章生成機",
-      description: "気まずい状況ですぐに使える文章を作成します。",
       categoryLabel: "状況選択",
       categoryLove: "恋愛",
       categoryWork: "会社 / 社会生活",
@@ -495,7 +545,26 @@ const translations = {
       privacySubTitle3: "3. 個人情報の保有・利用期間",
       privacyRetention: "原則として、お客様の個人情報は、その収集・利用目的が達成された時点で遅滞なく破棄されます。ただし、関連法令の規定により保存する必要がある場合は、当社は関連法令で定められた一定期間、会員情報を保管します。",
       privacySubTitle4: "4. プライバシーポリシーの変更",
-      privacyChanges: "法令及び方針の変更に伴う本プライバシーポリシーの追加、削除、修正があった場合は、ウェブサイトのお知らせ（または個別のお知らせ）にてお知らせいたします。"
+      privacyChanges: "法令及び方針の変更に伴う本プライバシーポリシーの追加、削除、修正があった場合は、ウェブサイトのお知らせ（または個別のお知らせ）にてお知らせいたします。",
+      privacyEffectiveDate: "施行日: 2026年1月19日"
+    },
+    pages: {
+        index: {
+            title: "恋愛・社会生活 文章生成機",
+            description: "気まずい状況ですぐに使える文章を作成します。"
+        },
+        about: {
+            title: "紹介 - 恋愛・社会生活 文章生成機",
+            description: "「恋愛・社会生活 文章生成機」プロジェクトの目的とビジョンについてご紹介します。"
+        },
+        contact: {
+            title: "連絡先 - 恋愛・社会生活 文章生成機",
+            description: "フィードバック、提案、お問い合わせなど、お気軽にご連絡ください。"
+        },
+        privacy: {
+            title: "プライバシーポリシー - 恋愛・社会生活 文章生成機",
+            description: "当社の個人情報の収集、使用、開示に関する方針について説明します。"
+        }
     },
     sentences: {
         love: {
@@ -643,8 +712,6 @@ const translations = {
       navAbout: "关于",
       navContact: "联系我们",
       navPrivacy: "隐私政策",
-      title: "恋爱·职场语句生成器",
-      description: "在尴尬的情况下，我们会立即为您创建可以使用的句子。",
       categoryLabel: "选择情况",
       categoryLove: "恋爱",
       categoryWork: "公司/社交生活",
@@ -655,7 +722,7 @@ const translations = {
       generateButton: "生成句子",
       copyButton: "复制句子",
       regenerateButton: "重新生成",
-      footer: "© 2026 句子生成器",
+      footer: "© 2026 语句生成器",
       copySuccess: "句子已复制！",
       aboutTitle: "关于",
       aboutSubTitle1: "我们的使命",
@@ -678,7 +745,26 @@ const translations = {
       privacySubTitle3: "3. 个人信息的保留和使用期限",
       privacyRetention: "原则上，您的个人信息在其收集和使用目的实现后将立即销毁。但是，如果根据相关法律法规的规定有必要保存，本公司将按照相关法律法规规定的期限保存会员信息。",
       privacySubTitle4: "4. 隐私政策的变更",
-      privacyChanges: "如果本隐私政策根据法律和政策的变化进行任何增删改动，我们将通过网站公告（或单独通知）予以公布。"
+      privacyChanges: "如果本隐私政策根据法律和政策的变化进行任何增删改动，我们将通过网站公告（或单独通知）予以公布。",
+      privacyEffectiveDate: "生效日期：2026年1月19日"
+    },
+    pages: {
+        index: {
+            title: "恋爱·职场语句生成器",
+            description: "在尴尬的情况下，我们会立即为您创建可以使用的句子。"
+        },
+        about: {
+            title: "关于 - 恋爱·职场语句生成器",
+            description: "了解“恋爱·职场语句生成器”项目的目的和愿景。"
+        },
+        contact: {
+            title: "联系我们 - 恋爱·职场语句生成器",
+            description: "如有任何反馈、建议或咨询，请随时与我们联系。"
+        },
+        privacy: {
+            title: "隐私政策 - 恋爱·职场语句生成器",
+            description: "本页概述了我们关于收集、使用和披露个人信息的政策。"
+        }
     },
     sentences: {
         love: {
@@ -828,11 +914,12 @@ function generateText() {
   const category = document.getElementById("category").value;
   const tone = document.getElementById("tone").value;
 
-  const list = translations[lang].sentences[category][tone];
-  const randomText = list[Math.floor(Math.random() * list.length)];
-
-  document.getElementById("resultText").innerText = randomText;
-  document.getElementById("resultBox").style.display = "block";
+  if (translations[lang] && translations[lang].sentences[category] && translations[lang].sentences[category][tone]) {
+    const list = translations[lang].sentences[category][tone];
+    const randomText = list[Math.floor(Math.random() * list.length)];
+    document.getElementById("resultText").innerText = randomText;
+    document.getElementById("resultBox").style.display = "block";
+  }
 }
 
 function copyText() {
