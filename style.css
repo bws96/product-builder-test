@@ -97,17 +97,6 @@ body.dark-mode button:hover {
   margin-top: 20px;
 }
 
-/* 광고 자리 시각용 */
-.ad {
-  background: #f1f5f9;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
-  font-size: 0.8rem;
-  color: #555;
-  margin: 16px 0;
-}
-
 /* Header Controls */
 .header-controls {
   display: flex;
@@ -165,11 +154,6 @@ body.dark-mode .footer {
   color: #6b7280;
 }
 
-body.dark-mode .ad {
-  background: #1f2937;
-  color: #9ca3af;
-}
-
 body.dark-mode #theme-toggle {
   border-color: #4b5563;
 }
@@ -209,12 +193,6 @@ body.dark-mode #theme-toggle {
 
   .footer {
     font-size: 0.7rem;
-  }
-
-  .ad {
-    padding: 8px;
-    font-size: 0.7rem;
-    margin: 12px 0;
   }
 
   .header-controls {

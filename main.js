@@ -46,9 +46,6 @@ const translations = {
     ui: {
       title: "연애 · 사회생활 문장 생성기",
       description: "어색한 상황에서 바로 써먹을 문장을 만들어드립니다",
-      adTop: "광고 영역 (상단)",
-      adMiddle: "광고 영역 (중간)",
-      adBottom: "광고 영역 (하단)",
       categoryLabel: "상황 선택",
       categoryLove: "연애",
       categoryWork: "회사 / 사회생활",
@@ -205,9 +202,6 @@ const translations = {
     ui: {
       title: "Sentence Generator for Love & Work",
       description: "We create sentences you can use right away in awkward situations.",
-      adTop: "Ad Area (Top)",
-      adMiddle: "Ad Area (Middle)",
-      adBottom: "Ad Area (Bottom)",
       categoryLabel: "Select Situation",
       categoryLove: "Love",
       categoryWork: "Work / Social Life",
@@ -364,9 +358,6 @@ const translations = {
     ui: {
       title: "恋愛・社会生活 文章生成機",
       description: "気まずい状況ですぐに使える文章を作成します。",
-      adTop: "広告エリア (上部)",
-      adMiddle: "広告エリア (中間)",
-      adBottom: "広告エリア (下部)",
       categoryLabel: "状況選択",
       categoryLove: "恋愛",
       categoryWork: "会社 / 社会生活",
@@ -523,9 +514,6 @@ const translations = {
     ui: {
       title: "恋爱·职场语句生成器",
       description: "在尴尬的情况下，我们会立即为您创建可以使用的句子。",
-      adTop: "广告区（上）",
-      adMiddle: "广告区（中）",
-      adBottom: "广告区（下）",
       categoryLabel: "选择情况",
       categoryLove: "恋爱",
       categoryWork: "公司/社交生活",
