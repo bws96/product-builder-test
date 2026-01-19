@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const translations = {
   ko: {
     ui: {
+      siteTitle: "문장 생성기",
       navHome: "홈",
       navAbout: "소개",
       navContact: "연락처",
@@ -255,6 +256,7 @@ const translations = {
   },
   en: {
     ui: {
+      siteTitle: "Sentence Generator",
       navHome: "Home",
       navAbout: "About",
       navContact: "Contact",
@@ -437,6 +439,7 @@ const translations = {
   },
   ja: {
     ui: {
+      siteTitle: "文章生成機",
       navHome: "ホーム",
       navAbout: "紹介",
       navContact: "連絡先",
@@ -619,6 +622,7 @@ const translations = {
   },
   zh: {
     ui: {
+      siteTitle: "语句生成器",
       navHome: "首页",
       navAbout: "关于",
       navContact: "联系我们",
