@@ -173,3 +173,63 @@ body.dark-mode .ad {
 body.dark-mode #theme-toggle {
   border-color: #4b5563;
 }
+
+/* Responsive adjustments for mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  p.desc {
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+
+  select {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .box {
+    margin-bottom: 12px;
+    padding: 12px;
+  }
+
+  .footer {
+    font-size: 0.7rem;
+  }
+
+  .ad {
+    padding: 8px;
+    font-size: 0.7rem;
+    margin: 12px 0;
+  }
+
+  .header-controls {
+    margin-bottom: 12px;
+  }
+
+  #theme-toggle {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    line-height: 36px;
+  }
+
+  #language-selector {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}
