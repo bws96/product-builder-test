@@ -108,6 +108,8 @@ const translations = {
   ko: {
     ui: {
       siteTitle: "문장 생성기",
+      heroTitle: "연애 · 사회생활 문장 생성기",
+      heroDescription: "어색한 상황에서 바로 써먹을 문장을 만들어드립니다",
       navHome: "홈",
       navAbout: "소개",
       navContact: "연락처",
@@ -308,6 +310,8 @@ const translations = {
   en: {
     ui: {
       siteTitle: "Sentence Generator",
+      heroTitle: "Sentence Generator for Love & Work",
+      heroDescription: "We create sentences you can use right away in awkward situations.",
       navHome: "Home",
       navAbout: "About",
       navContact: "Contact",
@@ -508,6 +512,8 @@ const translations = {
   ja: {
     ui: {
       siteTitle: "文章生成機",
+      heroTitle: "恋愛・社会生活 文章生成機",
+      heroDescription: "気まずい状況ですぐに使える文章を作成します。",
       navHome: "ホーム",
       navAbout: "紹介",
       navContact: "連絡先",
@@ -708,6 +714,8 @@ const translations = {
   zh: {
     ui: {
       siteTitle: "语句生成器",
+      heroTitle: "恋爱·职场语句生成器",
+      heroDescription: "在尴尬的情况下，我们会立即为您创建可以使用的句子。",
       navHome: "首页",
       navAbout: "关于",
       navContact: "联系我们",
