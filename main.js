@@ -44,6 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
 const translations = {
   ko: {
     ui: {
+      navHome: "홈",
+      navAbout: "소개",
+      navContact: "연락처",
+      navPrivacy: "개인정보처리방침",
       title: "연애 · 사회생활 문장 생성기",
       description: "어색한 상황에서 바로 써먹을 문장을 만들어드립니다",
       categoryLabel: "상황 선택",
@@ -57,7 +61,29 @@ const translations = {
       copyButton: "문장 복사하기",
       regenerateButton: "다시 생성하기",
       footer: "© 2026 문장 생성기",
-      copySuccess: "문장이 복사되었습니다!"
+      copySuccess: "문장이 복사되었습니다!",
+      aboutTitle: "소개",
+      aboutSubTitle1: "우리의 미션",
+      aboutMission: "'연애 · 사회생활 문장 생성기'는 단순한 문장 제공을 넘어, 사람들 사이의 소통을 더 쉽고 자신감 있게 만들어주는 것을 목표로 합니다. 우리는 많은 사람들이 중요한 순간에 적절한 표현을 찾지 못해 어려움을 겪는다는 것을 알고 있습니다. 저희는 이러한 장벽을 허물고, 사용자가 자신의 생각과 감정을 효과적으로 전달할 수 있도록 돕고자 합니다.",
+      aboutSubTitle2: "무엇을 제공하나요?",
+      aboutOffer: "저희 서비스는 '연애'와 '회사/사회생활'이라는 두 가지 주요 상황에 맞춰, '정중하게', '부드럽게', '솔직하게' 등 다양한 톤의 문장을 제공합니다. 각 문장은 심리학적, 사회적 맥락을 고려하여 신중하게 작성되었으며, 사용자가 어떤 상황에서도 자연스럽고 적절하게 소통할 수 있도록 설계되었습니다. 저희는 자동 생성된 콘텐츠가 아닌, 실제적인 가치를 제공하는 고품질의 콘텐츠를 제공하기 위해 노력합니다.",
+      aboutSubTitle3: "개발자 소개",
+      aboutDeveloper: "이 프로젝트는 1인 개발자에 의해 시작되었습니다. 사람들의 소통 방식에 깊은 관심을 가지고 있으며, 기술을 통해 긍정적인 사회적 변화를 만들 수 있다고 믿습니다. 사용자의 피드백을 소중히 여기며, 지속적인 업데이트를 통해 더 나은 서비스를 제공하기 위해 최선을 다하고 있습니다.",
+      contactTitle: "연락처",
+      contactSubTitle: "피드백 및 문의",
+      contactDescription: "'연애 · 사회생활 문장 생성기'에 대한 소중한 의견을 기다립니다. 서비스 개선을 위한 아이디어나 제안, 불편한 점, 또는 파트너십 문의 등 어떤 내용이든 환영합니다.",
+      contactEmail: "아래 이메일로 연락주시면 최대한 빠른 시일 내에 답변드리겠습니다.",
+      privacyTitle: "개인정보처리방침",
+      privacyIntro: "'연애 · 사회생활 문장 생성기'(이하 '서비스')는 사용자의 개인정보를 소중하게 생각하며, 정보통신망 이용촉진 및 정보보호 등에 관한 법률을 준수하고 있습니다. 본 개인정보처리방침을 통해 사용자가 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.",
+      privacySubTitle1: "1. 수집하는 개인정보 항목",
+      privacyItem1: "저희 서비스는 별도의 회원가입 절차 없이 대부분의 콘텐츠에 자유롭게 접근할 수 있습니다. 다만, 일부 기능 이용 시 다음과 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.\n- 쿠키, 접속 로그, 서비스 이용 기록, 기기 정보",
+      privacyItem1_2: "테마 및 언어 설정 저장을 위해 브라우저의 `localStorage`를 사용합니다. 이 정보는 사용자의 기기에만 저장되며, 저희 서버로 전송되지 않습니다.",
+      privacySubTitle2: "2. 개인정보의 수집 및 이용 목적",
+      privacyPurpose: "서비스는 수집한 정보를 다음의 목적을 위해 활용합니다.\n- 서비스 이용에 대한 통계 및 분석을 통한 서비스 개선 및 신규 서비스 개발\n- Google AdSense 등 광고 파트너를 통한 맞춤형 광고 제공",
+      privacySubTitle3: "3. 개인정보의 보유 및 이용기간",
+      privacyRetention: "사용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다. 단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우, 회사는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다.",
+      privacySubTitle4: "4. 개인정보 처리방침의 변경",
+      privacyChanges: "본 개인정보처리방침은 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다."
     },
     sentences: {
         love: {
@@ -200,6 +226,10 @@ const translations = {
   },
   en: {
     ui: {
+      navHome: "Home",
+      navAbout: "About",
+      navContact: "Contact",
+      navPrivacy: "Privacy Policy",
       title: "Sentence Generator for Love & Work",
       description: "We create sentences you can use right away in awkward situations.",
       categoryLabel: "Select Situation",
@@ -213,7 +243,29 @@ const translations = {
       copyButton: "Copy Sentence",
       regenerateButton: "Regenerate",
       footer: "© 2026 Sentence Generator",
-      copySuccess: "Sentence copied!"
+      copySuccess: "Sentence copied!",
+      aboutTitle: "About",
+      aboutSubTitle1: "Our Mission",
+      aboutMission: "The 'Sentence Generator for Love & Work' aims to do more than just provide sentences; it aims to make communication between people easier and more confident. We know that many people struggle to find the right words at important moments. We want to break down these barriers and help users effectively convey their thoughts and feelings.",
+      aboutSubTitle2: "What We Offer",
+      aboutOffer: "Our service provides sentences in various tones, such as 'Polite,' 'Casual,' and 'Honest,' for two main situations: 'Love' and 'Work/Social Life.' Each sentence is carefully crafted considering psychological and social contexts, designed to help users communicate naturally and appropriately in any situation. We strive to provide high-quality content that offers real value, not just auto-generated content.",
+      aboutSubTitle3: "About the Developer",
+      aboutDeveloper: "This project was started by a solo developer who is deeply interested in how people communicate and believes that technology can create positive social change. We value user feedback and are committed to providing a better service through continuous updates.",
+      contactTitle: "Contact",
+      contactSubTitle: "Feedback and Inquiries",
+      contactDescription: "We welcome your valuable feedback on the 'Sentence Generator for Love & Work.' Whether you have ideas for improving the service, suggestions, complaints, or partnership inquiries, we are open to hearing them.",
+      contactEmail: "Please contact us at the email below, and we will respond as soon as possible.",
+      privacyTitle: "Privacy Policy",
+      privacyIntro: "The 'Sentence Generator for Love & Work' (hereinafter 'the Service') values your privacy and complies with the Act on Promotion of Information and Communications Network Utilization and Information Protection, etc. This Privacy Policy informs you of the purposes and methods of using the personal information you provide and the measures taken to protect your personal information.",
+      privacySubTitle1: "1. Personal Information We Collect",
+      privacyItem1: "Most of our content is freely accessible without a separate membership registration process. However, the following information may be automatically generated and collected when using some features:\n- Cookies, access logs, service usage records, device information.",
+      privacyItem1_2: "We use your browser's `localStorage` to save your theme and language settings. This information is stored only on your device and is not sent to our servers.",
+      privacySubTitle2: "2. Purpose of Collection and Use of Personal Information",
+      privacyPurpose: "The Service uses the collected information for the following purposes:\n- Service improvement and new service development through statistics and analysis of service use.\n- Providing customized advertisements through advertising partners such as Google AdSense.",
+      privacySubTitle3: "3. Period of Retention and Use of Personal Information",
+      privacyRetention: "In principle, your personal information is destroyed without delay when the purpose of its collection and use has been achieved. However, if it is necessary to preserve it in accordance with the provisions of relevant laws and regulations, the company shall store member information for a certain period of time as stipulated by the relevant laws and regulations.",
+      privacySubTitle4: "4. Changes to the Privacy Policy",
+      privacyChanges: "Any additions, deletions, or corrections to this Privacy Policy in accordance with changes in laws and policies will be announced through the website's notice board (or individual notices)."
     },
     sentences: {
         love: {
@@ -356,6 +408,10 @@ const translations = {
   },
   ja: {
     ui: {
+      navHome: "ホーム",
+      navAbout: "紹介",
+      navContact: "連絡先",
+      navPrivacy: "プライバシーポリシー",
       title: "恋愛・社会生活 文章生成機",
       description: "気まずい状況ですぐに使える文章を作成します。",
       categoryLabel: "状況選択",
@@ -369,7 +425,29 @@ const translations = {
       copyButton: "文章をコピー",
       regenerateButton: "再生成",
       footer: "© 2026 文章生成機",
-      copySuccess: "文章がコピーされました！"
+      copySuccess: "文章がコピーされました！",
+      aboutTitle: "紹介",
+      aboutSubTitle1: "私たちの使命",
+      aboutMission: "「恋愛・社会生活 文章生成機」は、単に文章を提供するだけでなく、人々のコミュニケーションをより簡単で自信のあるものにすることを目指しています。私たちは、多くの人々が重要な瞬間に適切な表現を見つけられずに苦労していることを知っています。私たちは、これらの障壁を取り除き、ユーザーが自分の考えや感情を効果的に伝えられるよう支援したいと考えています。",
+      aboutSubTitle2: "何を提供していますか？",
+      aboutOffer: "当社のサービスは、「恋愛」と「会社/社会生活」という2つの主要な状況に合わせて、「丁寧」、「柔らかく」、「率直」など、さまざまなトーンの文章を提供します。各文章は、心理的および社会的文脈を考慮して慎重に作成されており、ユーザーがどのような状況でも自然かつ適切にコミュニケーションできるように設計されています。私たちは、自動生成されたコンテンツではなく、真の価値を提供する高品質のコンテンツを提供することに努めています。",
+      aboutSubTitle3: "開発者について",
+      aboutDeveloper: "このプロジェクトは、人々のコミュニケーション方法に深く関心を持ち、テクノロジーが前向きな社会的変化を生み出すことができると信じている一人の開発者によって開始されました。私たちはユーザーのフィードバックを大切にし、継続的な更新を通じてより良いサービスを提供することに尽力しています。",
+      contactTitle: "連絡先",
+      contactSubTitle: "フィードバックと問い合わせ",
+      contactDescription: "「恋愛・社会生活 文章生成機」に関する貴重なご意見をお待ちしております。サービスの改善のためのアイデアや提案、苦情、またはパートナーシップに関する問い合わせなど、何でも歓迎します。",
+      contactEmail: "下記のメールアドレスまでご連絡いただければ、できるだけ早く返信いたします。",
+      privacyTitle: "プライバシーポリシー",
+      privacyIntro: "「恋愛・社会生活 文章生成機」（以下「本サービス」）は、お客様のプライバシーを尊重し、情報通信網利用促進及び情報保護等に関する法律を遵守します。本プライバシーポリシーは、お客様が提供する個人情報がどのような目的と方法で使用されているか、また個人情報を保護するためにどのような措置が講じられているかをお知らせするものです。",
+      privacySubTitle1: "1. 収集する個人情報の項目",
+      privacyItem1: "当社のコンテンツのほとんどは、別途会員登録をしなくても自由にアクセスできます。ただし、一部の機能をご利用になる際に、以下の情報が自動的に生成・収集される場合があります。\n- クッキー、アクセスログ、サービス利用記録、端末情報",
+      privacyItem1_2: "テーマと言語の設定を保存するために、ブラウザの「localStorage」を使用します。この情報は、お客様のデバイスにのみ保存され、当社のサーバーには送信されません。",
+      privacySubTitle2: "2. 個人情報の収集・利用目的",
+      privacyPurpose: "本サービスは、収集した情報を以下の目的で利用します。\n- サービス利用に関する統計・分析によるサービス改善及び新規サービス開発\n- Google AdSenseなどの広告パートナーによるカスタマイズ広告の提供",
+      privacySubTitle3: "3. 個人情報の保有・利用期間",
+      privacyRetention: "原則として、お客様の個人情報は、その収集・利用目的が達成された時点で遅滞なく破棄されます。ただし、関連法令の規定により保存する必要がある場合は、当社は関連法令で定められた一定期間、会員情報を保管します。",
+      privacySubTitle4: "4. プライバシーポリシーの変更",
+      privacyChanges: "法令及び方針の変更に伴う本プライバシーポリシーの追加、削除、修正があった場合は、ウェブサイトのお知らせ（または個別のお知らせ）にてお知らせいたします。"
     },
     sentences: {
         love: {
@@ -512,6 +590,10 @@ const translations = {
   },
   zh: {
     ui: {
+      navHome: "首页",
+      navAbout: "关于",
+      navContact: "联系我们",
+      navPrivacy: "隐私政策",
       title: "恋爱·职场语句生成器",
       description: "在尴尬的情况下，我们会立即为您创建可以使用的句子。",
       categoryLabel: "选择情况",
@@ -525,7 +607,29 @@ const translations = {
       copyButton: "复制句子",
       regenerateButton: "重新生成",
       footer: "© 2026 句子生成器",
-      copySuccess: "句子已复制！"
+      copySuccess: "句子已复制！",
+      aboutTitle: "关于",
+      aboutSubTitle1: "我们的使命",
+      aboutMission: "“恋爱·职场语句生成器”的目标不仅仅是提供句子，更是为了让人们之间的交流更轻松、更自信。我们知道，很多人在重要时刻难以找到合适的表达方式。我们希望打破这些障碍，帮助用户有效地传达他们的想法和感受。",
+      aboutSubTitle2: "我们提供什么？",
+      aboutOffer: "我们的服务针对“恋爱”和“工作/社交生活”这两种主要情况，提供“郑重”、“柔和”、“坦率”等多种语气的句子。每句话都经过精心制作，考虑了心理和社会背景，旨在帮助用户在任何情况下都能自然、恰当地进行交流。我们致力于提供具有真正价值的高质量内容，而不仅仅是自动生成的内容。",
+      aboutSubTitle3: "关于开发者",
+      aboutDeveloper: "这个项目是由一位对人们的交流方式深感兴趣的独立开发者发起的，他相信技术可以创造积极的社会变革。我们重视用户的反馈，并致力于通过不断更新提供更好的服务。",
+      contactTitle: "联系我们",
+      contactSubTitle: "反馈和咨询",
+      contactDescription: "我们欢迎您对“恋爱·职场语句生成器”提出宝贵意见。无论您是对改进服务的想法、建议、投诉，还是合作咨询，我们都乐于倾听。",
+      contactEmail: "请通过以下电子邮件与我们联系，我们将尽快给您答复。",
+      privacyTitle: "隐私政策",
+      privacyIntro: "“恋爱·职场语句生成器”（以下简称“本服务”）重视您的隐私，并遵守《促进信息通信网络利用和信息保护等相关法律》。本隐私政策旨在告知您，您提供的个人信息将用于何种目的、以何种方式使用，以及为保护您的个人信息采取了哪些措施。",
+      privacySubTitle1: "1. 我们收集的个人信息项目",
+      privacyItem1: "我们的大部分内容无需单独注册即可免费访问。但是，在使用某些功能时，可能会自动生成并收集以下信息：\n- Cookie、访问日志、服务使用记录、设备信息。",
+      privacyItem1_2: "我们使用您浏览器的 `localStorage` 来保存您的主题和语言设置。此信息仅存储在您的设备上，不会发送到我们的服务器。",
+      privacySubTitle2: "2. 个人信息的收集和使用目的",
+      privacyPurpose: "本服务将收集的信息用于以下目的：\n- 通过对服务使用的统计和分析来改进服务和开发新服务。\n- 通过 Google AdSense 等广告合作伙伴提供定制广告。",
+      privacySubTitle3: "3. 个人信息的保留和使用期限",
+      privacyRetention: "原则上，您的个人信息在其收集和使用目的实现后将立即销毁。但是，如果根据相关法律法规的规定有必要保存，本公司将按照相关法律法规规定的期限保存会员信息。",
+      privacySubTitle4: "4. 隐私政策的变更",
+      privacyChanges: "如果本隐私政策根据法律和政策的变化进行任何增删改动，我们将通过网站公告（或单独通知）予以公布。"
     },
     sentences: {
         love: {
