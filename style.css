@@ -275,7 +275,7 @@ label {
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 8px;
-  color: var(--text-color-light);
+  color: inherit; /* 상위 요소(body)의 테마별 색상을 상속받도록 수정 */
   opacity: 0.9;
 }
 
