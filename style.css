@@ -37,7 +37,7 @@ body {
   padding: 20px;
 }
 
-/* Header */
+/* Header Actions & Buttons Alignment */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -51,7 +51,17 @@ body {
   font-weight: 700;
   color: var(--text-color-light);
   text-decoration: none;
-  flex-grow: 1; /* Allow title to take available space */
+}
+
+#header-actions-placeholder {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
 }
 
 .menu-toggle-btn,
@@ -69,6 +79,7 @@ body {
   color: var(--text-color-light);
   transition: all 0.2s;
   padding: 0;
+  flex-shrink: 0; /* Prevent buttons from shrinking */
 }
 
 .menu-toggle-btn:hover,
