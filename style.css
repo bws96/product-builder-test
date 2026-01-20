@@ -407,13 +407,44 @@ select {
     to { transform: rotate(360deg); }
 }
 
-/* Footer */
-.site-footer {
-  text-align: center;
-  padding: 50px 20px;
-  font-size: 0.9rem;
-  color: var(--sub-text-color-light);
-  font-weight: 500;
+/* Info Section */
+.info-section {
+    margin-top: 40px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.info-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.info-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-item li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.faq-list p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* Responsive Info Grid */
+@media (max-width: 600px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Dark Mode Overrides - Modern SaaS / Dashboard Style */

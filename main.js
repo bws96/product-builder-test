@@ -205,14 +205,16 @@ const translations = {
         navContact: "연락처",
         navPrivacy: "개인정보처리방침",
         
-        // 메인 하단 정보
         infoTitle1: "왜 상황별 맞춤 문장이 필요한가요?",
         infoDesc1: "현대 사회에서 비대면 소통(카톡, DM, 메일)의 비중이 높아지면서, 적절한 단어 선택 하나가 관계의 성패를 결정짓기도 합니다. '상황별 맞춤 문장 생성기'는 단순한 텍스트 전달을 넘어, 상대방과의 심리적 거리와 상황의 맥락과 감정선까지 고려한 최적의 표현을 제안함으로써 사용자 여러분의 소중한 의사소통을 지원합니다.",
         tipTitle1: "💡 소통의 핵심 원칙",
+        tipSub1: "말투 하나가 관계를 바꿉니다. 저희 서비스는 다음과 같은 심리학적 원칙을 바탕으로 문장을 제안합니다.",
         tip1: "<strong>역지사지:</strong> 상대방의 입장에서 문장을 다시 한번 읽어보세요.",
         tip2: "<strong>톤 앤 매너:</strong> 상황에 맞는 말투(정중함, 친근함 등) 설정이 중요합니다.",
         tip3: "<strong>명확한 의도:</strong> 돌려 말하기보다는 핵심을 예의 바르게 전달하세요.",
-        faqTitle: "❓ 자주 묻는 질문",
+        faqTitle: "❓ 자주 묻는 질문 (FAQ)",
+        infoTitle2: "비즈니스와 일상, 모두를 위한 대화 가이드",
+        infoDesc2: "상황별 맞춤 문장 생성기는 13가지 이상의 다양한 말투와 50개 이상의 세부 상황을 지원합니다. 직장 상사에게 보고할 때의 정중함, 친구에게 서운함을 전할 때의 부드러움, 거래처와의 단호한 협상 등 당신이 처한 모든 순간에 가장 적절한 '첫 마디'를 찾아드립니다. 지금 바로 선택하고 대화를 시작해 보세요.",
 
         categoryLabel: "상황 선택",
         categoryLove: "연애 / 썸",
@@ -322,13 +324,16 @@ const translations = {
               description: "연애, 회사, 가족, 학교 등 다양한 상황에서 쓸 수 있는 문장을 생성합니다."
           },
           tips: {
-            tipsTitle: "완벽한 소통을 위한 가이드",
+            tipsTitle: "완벽한 소통을 위한 심층 가이드",
+            tipsIntro: "우리는 매일 수많은 대화를 나누지만, 정작 중요한 순간에는 입이 떨어지지 않거나 잘못된 단어 선택으로 관계를 그르치기도 합니다. 본 가이드는 당신의 메시지에 진심과 예의를 동시에 담는 법을 다룹니다.",
             article1Title: "1. 비대면 대화의 한계를 극복하는 법",
-            article1Content: "텍스트 기반의 대화는 비언어적 요소(표정, 목소리 톤)가 배제되어 오해의 소지가 많습니다. 이를 극복하기 위해서는 '쿠션어'의 사용이 필수적입니다. '안 돼요'라고 말하기보다 '정말 도와드리고 싶지만, 현재 상황상...'과 같은 표현을 사용하는 것만으로도 대화의 온도가 달라집니다.",
+            article1Content: "텍스트 기반의 대화는 비언어적 요소(표정, 목소리 톤)가 배제되어 오해의 소지가 많습니다. 이를 극복하기 위해서는 '쿠션어'의 사용이 필수적입니다. '안 돼요'라고 말하기보다 '정말 도와드리고 싶지만, 현재 상황상...'과 같은 표현을 사용하는 것만으로도 대화의 온도가 달라집니다. 특히 상대방이 내 표정을 볼 수 없는 온라인 환경에서는 문장의 끝맺음 하나에도 신경을 써야 합니다.",
             article2Title: "2. 관계를 망치지 않는 건강한 거절",
-            article2Content: "거절은 '상대방'을 거절하는 것이 아니라 '요청'을 거절하는 것임을 명확히 해야 합니다. 미안한 마음을 충분히 표현하되, 불가능한 이유를 간결하게 덧붙이세요. 우리 서비스의 '단호하게' 또는 '구구절절하게' 옵션을 활용하면 상황에 맞는 적절한 거절 문구를 찾을 수 있습니다.",
+            article2Content: "거절은 '상대방'을 거절하는 것이 아니라 '요청'을 거절하는 것임을 명확히 해야 합니다. 미안한 마음을 충분히 표현하되, 불가능한 이유를 간결하게 덧붙이세요. 우리 서비스의 '단호하게' 또는 '구구절절하게' 옵션을 활용하면 상황에 맞는 적절한 거절 문구를 찾을 수 있습니다. 또한, 대안을 제시하는 거절은 상대방으로 하여금 존중받고 있다는 느낌을 줍니다.",
             article3Title: "3. 사과의 정석: 변명 없는 진심",
-            article3Content: "좋은 사과에는 세 가지 요소가 필요합니다: 유감 표명, 책임 인정, 보상 방안 제시입니다. '만약 기분이 나빴다면 미안해'라는 식의 가정법 사과는 오히려 관계를 악화시킵니다. '내 실수가 너에게 상처가 되었을 것 같아 미안해'라는 식의 직접적인 표현이 필요합니다."
+            article3Content: "좋은 사과에는 세 가지 요소가 필요합니다: 유감 표명, 책임 인정, 보상 방안 제시입니다. '만약 기분이 나빴다면 미안해'라는 식의 가정법 사과는 오히려 관계를 악화시킵니다. '내 실수가 너에게 상처가 되었을 것 같아 미안해'라는 식의 직접적인 표현이 필요합니다. 사과는 타이밍이 생명이지만, 감정이 격앙된 상태보다는 차분히 정돈된 문장으로 전달하는 것이 더 효과적입니다.",
+            article4Title: "4. 직장 내 소통: 보고와 피드백의 기술",
+            article4Content: "상사나 동료와의 대화에서는 '결론부터' 말하는 두괄식 화법이 핵심입니다. 하지만 결론만 말하면 자칫 공격적으로 보일 수 있으므로, 상황별 맞춤 문장 생성기의 '정중하게' 옵션을 활용해 앞뒤에 적절한 인사와 양해를 구하는 문구를 배치하는 것이 좋습니다. 명확한 데이터와 근거를 바탕으로 하되, 상대방의 업무 스타일을 존중하는 태도가 수반되어야 합니다."
           },
           about: {
             title: "소개 - 상황별 문장 생성기",
@@ -382,10 +387,13 @@ const translations = {
         infoTitle1: "Why Situation-Based Sentences?",
         infoDesc1: "As online communication grows, choosing the right words determines relationship success. Our AI analyzes distance and context to suggest the best expressions.",
         tipTitle1: "💡 Core Principles",
+        tipSub1: "A single word can change a relationship. Our service suggests sentences based on the following psychological principles.",
         tip1: "<strong>Empathy:</strong> Read the sentence from the other person's view.",
         tip2: "<strong>Tone:</strong> Setting the right tone (formal, casual) is key.",
         tip3: "<strong>Clarity:</strong> Convey your intent politely and clearly.",
         faqTitle: "❓ FAQ",
+        infoTitle2: "Dialogue Guide for Business and Daily Life",
+        infoDesc2: "We support 13+ tones and 50+ situations. Find the perfect 'first word' for reporting to a boss, expressing disappointment to a friend, or negotiating firmly with a client.",
 
         categoryLabel: "Select Situation",
         categoryLove: "Dating / Love",
@@ -495,13 +503,16 @@ const translations = {
               description: "Generate appropriate sentences for dating, work, family, and more."
           },
           tips: {
-            tipsTitle: "Communication Guide",
+            tipsTitle: "In-depth Communication Guide",
+            tipsIntro: "We have countless conversations daily, but in crucial moments, we often struggle to find words. this guide covers how to convey sincerity and politeness simultaneously.",
             article1Title: "1. Overcoming Digital Limits",
-            article1Content: "Text lacks non-verbal cues. Use 'cushion words' to soften the impact.",
+            article1Content: "Text lacks non-verbal cues (expressions, tone). Use 'cushion words' to soften impact. Instead of saying 'No,' say 'I'd love to help, but currently...'",
             article2Title: "2. Healthy Rejection",
-            article2Content: "Make it clear you are rejecting the request, not the person.",
+            article2Content: "Make it clear you are rejecting the 'request,' not the 'person.' Express regret and add a brief reason. Our 'Firm' or 'Detailed' options can help.",
             article3Title: "3. The Art of Apology",
-            article3Content: "Admit responsibility and avoid 'if' statements."
+            article3Content: "Three elements are needed: regret, admitting responsibility, and offering compensation. Avoid 'if' statements like 'If you felt bad, I'm sorry.'",
+            article4Title: "4. Workplace Communication",
+            article4Content: "The key is the 'conclusion first' method. Use the 'Polite' option to add appropriate greetings and requests for understanding to avoid appearing aggressive."
           },
           about: {
             title: "About - Sentence Generator",
@@ -555,10 +566,13 @@ const translations = {
         infoTitle1: "なぜ状況別メッセージが必要なのですか？",
         infoDesc1: "オンラインコミュニケーションが増える中、適切な言葉選びが関係の成否を分けます。当サービスはAIを活用し、最適な表現を提案します。",
         tipTitle1: "💡 コミュニケーションの原則",
+        tipSub1: "一言が関係を変えます。当サービスは以下の心理学的原則に基づいた文章を提案します。",
         tip1: "<strong>思いやり:</strong> 相手の立場で文章を読み返してみましょう。",
         tip2: "<strong>トーン:</strong> 正しいトーン（丁寧、カジュアル）の設定が重要です。",
         tip3: "<strong>明快さ:</strong> 意図を丁寧に、かつはっきりと伝えましょう。",
-        faqTitle: "❓ よくある質問",
+        faqTitle: "❓ よくある質問 (FAQ)",
+        infoTitle2: "ビジネスと日常、すべてのための対話ガイド",
+        infoDesc2: "13種類以上のトーンと50以上のシチュエーションをサポート。上司への報告、友人への不満、取引先との交渉など、あらゆる瞬間に最適な「最初の一言」を見つけます。",
 
         categoryLabel: "状況を選択",
         categoryLove: "恋愛 / 썸",
@@ -668,13 +682,16 @@ const translations = {
               description: "恋愛、仕事、家族など、様々な状況に合わせた文章を自動生成します。"
           },
           tips: {
-            tipsTitle: "コミュニケーションガイド",
+            tipsTitle: "コミュニケーション深層ガイド",
+            tipsIntro: "毎日多くの会話を交わしますが、重要な瞬間に言葉に詰まることがあります。本ガイドでは真実味と礼儀を同時に込める方法を扱います。",
             article1Title: "1. デジタル制限の克服",
-            article1Content: "テキストには非言語的な合図がありません。影響を和らげるために「クッション言葉」を使用してください。",
+            article1Content: "テキストには非言語的要素がありません。影響を和らげるために「クッション言葉」を使用してください。「できません」より「お役に立ちたいのですが、現在は…」のような表現が効果的です。",
             article2Title: "2. 健康的な拒絶",
-            article2Content: "人ではなく、リクエストを拒否していることを明確にしてください。",
-            article3Title: "3. 謝罪の技術",
-            article3Content: "責任を認め、「もし〜なら」という発言は避けてください。"
+            article2Content: "「相手」ではなく「リクエスト」を拒否していることを明確にしてください。弊社の「断固として」や「詳細に」オプションを活用すれば、状況に合わせた適切な拒絶文を見つけられます。",
+            article3Title: "3. 謝죄の技術",
+            article3Content: "3つの要素が必要です：遺憾の表明、責任の承認、補償案の提示。「もし気分を害したなら」のような仮定法は避け、責任を認める直接的な表現を使いましょう。",
+            article4Title: "4. 職場での対話",
+            article4Content: "結論から話すのが鍵です。「丁寧に」オプションを使用して、前後に適切な挨拶や配慮を加えることで、攻撃的に見えるのを防ぎます。"
           },
           about: {
             title: "紹介 - メッセージ生成AI",
@@ -683,16 +700,16 @@ const translations = {
             aboutSubTitle1: "私たちのミッション",
             aboutMission: "「シチュエーション別メッセージ生成AI」は、デジタル時代のコミュニケーションをより簡単で温かいものにすることを目指しています。重要な瞬間に適切な言葉が見つからず悩んだ経験は誰にでもあります。私たちはAI技術を活用してその悩みを解決し、人と人との関係をより円滑にする架け橋となりたいと考えています。",
             aboutSubTitle2: "主な機能と特徴",
-            aboutOffer: "本サービスは、恋愛、ビジネス、家族関係など、日常の様々な状況に特化した文章をリアルタイムで生成します。<br><br>1. <strong>多様なペルソナ:</strong> 丁寧なビジネス用語から親しみやすい口調、時代劇風まで、状況に合ったトーン＆マナーを選択できます。<br>2. <strong>カスタマイズ:</strong> 相手（聞き手）を指定し、含めたいキーワードを入力することで、より精巧でパーソナライズされた文章が完成します。<br>3. <strong>リアルタイムAIエンジン:</strong> 定型文をランダムに表示するのではなく、最新のAIモデルが入力条件を分析し、毎回新しい文章を創作します。",
+            aboutOffer: "本サービスは、恋愛、ビジネス、家族関係など、日常の様々な状況に特化した文章をリアルタイムで生成します。<br><br>1. <strong>多様なペルソナ:</strong> 丁寧なビジネス用語から親しみやすい口調、時代劇風まで、状況に合ったトーン＆マナーを選択できます。<br>2. <strong>カスタマイ즈:</strong> 相手（聞き手）を指定し、含めたいキーワードを入力することで、より精巧でパーソナライズされた文章が完成します。<br>3. <strong>リアルタイムAIエンジン:</strong> 最新のAIモデルが入力条件を分析し、毎回新しい文章を創作します。",
             aboutSubTitle3: "開発者について",
-            aboutDeveloper: "このプロジェクトは「技術で人々の心をつなぐ」というビジョンを持つ個人の開発者によって運営されています。ユーザーの皆様のフィードバックがサービス発展の大きな原動力となります。今後も継続的なアップデートを通じて、より多くの状況と感情をカバーするサービスへと成長させていきます。"
+            aboutDeveloper: "このプロジェクトは「技術で人々の心をつなぐ」というビジョンを持つ個人の開発者によって運営されています。ユーザーの皆様のフィードバックがサービス発展の大きな原動力となります。"
           },
           contact: {
             title: "お問い合わせ - メッセージ生成AI",
             description: "フィードバックと提案",
             contactTitle: "お問い合わせ",
             contactSubTitle: "フィードバック・提案",
-            contactDescription: "サービス利用中に不便な点や改善のアイデア、あるいは面白い提案はありますか？皆様の声はいつでも歓迎します。お送りいただいたご意見は慎重に検討し、サービスに反映できるよう努めます。",
+            contactDescription: "サービス利用中に不便な点や改善のアイデア、あるいは面白い提案はありますか？皆様の声はいつでも歓迎します。",
             contactEmail: "以下のメールアドレスにご連絡いただければ、確認後迅速に回答いたします。",
             emailLink: "bws96g@gmail.com"
           },
@@ -700,14 +717,14 @@ const translations = {
             title: "プライバシーポリシー - メッセージ生成AI",
             description: "個人情報の収集と利用について",
             privacyTitle: "プライバシーポリシー",
-            privacyIntro: "「メッセージ生成AI」（以下「本サービス」）は、ユーザーの個人情報保護を最優先に考え、関連法令を遵守します。本方針は、ユーザーの大切な情報がどのように扱われるかを透明に公開するために作成されました。",
+            privacyIntro: "「状況別メッセージ生成AI」（以下「本サービス」）は、ユーザーの個人情報保護を最優先に考え、関連法令を遵守します。",
             privacySubTitle1: "1. 収集する個人情報項目",
-            privacyItem1: "本サービスは会員登録なしで利用可能であり、サービス提供のために最小限の情報のみを収集します。<br><br><strong>[自動収集情報]</strong><br>- クッキー(Cookie)、利用記録、アクセスログ、IPアドレス、端末情報。<br>- Google AnalyticsやMicrosoft Clarity等の分析ツールを通じて匿名化された利用行動情報が収集される場合があります。<br><br><strong>[ユーザー入力情報]</strong><br>- 文章生成のために入力された「相手」、「キーワード」、「状況設定」などの データは、AI処理のために一時的に送信されますが、サーバーに永久保存されることはありません。",
+            privacyItem1: "本サービスは会員登録なしで利用可能であり、サービス提供のために最小限の情報のみを収集します。<br><br><strong>[自動収集情報]</strong><br>- クッキー、利用記録、アクセスログ、IPアドレス、端末情報。<br><br><strong>[ユーザー入力情報]</strong><br>- 文章生成のために入力されたデータはAI処理のために一時的に送信されますが、保存はされません。",
             privacyItem1_2: "<strong>[ローカルストレージ]</strong><br>- 「テーマ設定」および「言語設定」はブラウザのlocalStorageに保存され、サーバーには送信されません。",
             privacySubTitle2: "2. 利用目的",
-            privacyPurpose: "収集された情報は以下の目的でのみ使用されます。<br>- AI文章生成サービスの提供および品質向上<br>- 利用統計の分析<br>- Google AdSenseを通じた広告配信<br>- サービスのエラー修正およびセキュリティ強化",
+            privacyPurpose: "AI文章生成サービスの提供、利用統計の分析、広告配信、セキュリティ強化のためにのみ使用されます。",
             privacySubTitle3: "3. 第三者への提供",
-            privacyRetention: "統計分析および広告配信のために以下の外部ツールを使用する場合を除き、個人情報を外部に提供しません。<br>- <strong>Google:</strong> Analytics, AdSense<br>- <strong>Microsoft:</strong> Clarity<br><br>ユーザーはブラウザの設定でクッキーの収集を拒否できます。",
+            privacyRetention: "統計分析および広告配信のためにGoogleやMicrosoftの外部ツールを使用する場合があります。",
             privacySubTitle4: "4. 個人情報の破棄",
             privacyChanges: "個人情報は、収集および利用目的が達成された後は遅滞なく破棄することを原則とします。",
             privacyEffectiveDate: "施行日: 2026年1月20일"
@@ -728,10 +745,13 @@ const translations = {
         infoTitle1: "为什么需要场景化话术？",
         infoDesc1: "随着在线沟通的增加，选择合适的词汇决定了关系的成败。我们的AI通过分析语境提供最佳表达。",
         tipTitle1: "💡 沟通原则",
+        tipSub1: "一句话可以改变一段关系。我们的服务根据以下心理学原则提供话术建议。",
         tip1: "<strong>共情:</strong> 从对方的角度重新阅读句子。",
         tip2: "<strong>语气:</strong> 设定正确的语气（正式、随意）是关键。",
         tip3: "<strong>清晰:</strong> 礼貌且清晰地传达你的意图。",
-        faqTitle: "❓ 常见问题",
+        faqTitle: "❓ 常见问题 (FAQ)",
+        infoTitle2: "商务与日常生活对话指南",
+        infoDesc2: "支持13种以上语调和50多种场景。无论是向老板汇报、向朋友表达不满，还是与客户谈判，都能找到最完美的“第一句话”。",
 
         categoryLabel: "选择场景",
         categoryLove: "恋爱 / 情感",
@@ -818,7 +838,7 @@ const translations = {
         toneCasual: "温和",
         toneHonest: "坦诚",
         toneFirm: "坚决",
-        toneWitty: "幽默风趣",
+        toneWitty: "幽머风趣",
         toneConcise: "简短有力",
         toneDetailed: "详细说明",
         tonePolitePlus: "极度客气 (毕恭毕敬)",
@@ -841,31 +861,34 @@ const translations = {
               description: "自动生成适用于恋爱、职场、家庭等多种场合的回复。"
           },
           tips: {
-            tipsTitle: "沟通指南",
+            tipsTitle: "沟通深度指南",
+            tipsIntro: "我们每天进行无数次对话，但在关键时刻往往难以开口。本指南涵盖了如何同时表达诚意和礼貌。",
             article1Title: "1. 克服数字限制",
-            article1Content: "文本缺乏非语言暗示。使用“垫后语”来软化冲击。",
+            article1Content: "文字缺乏非语言因素。使用“垫后语”来软和冲击。与其说“不行”，不如说“我很想帮忙，但目前……”",
             article2Title: "2. 健康的拒绝",
-            article2Content: "明确表示你是在拒绝请求，而不是拒绝人。",
+            article2Content: "明确表示你是在拒绝“请求”而非“人”。我们的“坚决”或“详细”选项可以提供帮助。",
             article3Title: "3. 道歉的艺术",
-            article3Content: "承认责任，避免使用“如果”之类的陈述。"
+            article3Content: "需要三个要素：表示遗憾、承认责任、提供补偿。避免使用“如果”之类的陈述。",
+            article4Title: "4. 职场沟通",
+            article4Content: "关键是“结论先行”。使用“礼貌”选项添加适当的问候，避免显得过于强势。"
           },
           about: {
             title: "关于 - 话术生成器",
             description: "项目介绍与愿景",
             aboutTitle: "关于我们",
             aboutSubTitle1: "我们的使命",
-            aboutMission: "“场景化话术生成器”旨在让数字时代的沟通变得更简单、更温暖。每个人都有在关键时刻找不到合适措辞的经历。我们利用AI技术来解决这些困扰，成为连接人与人之间关系的桥梁。除了简单的文本生成，我们还通过建议考虑上下文和情感基调的最佳表达方式，来支持您宝贵的沟通。",
+            aboutMission: "“场景化话术生成器”旨在让数字时代的沟通变得更简单、更温暖。每个人都有在关键时刻找不到合适措辞的经历。我们利用AI技术来解决这些困扰，成为连接人与人之间关系的桥梁。",
             aboutSubTitle2: "功能特色",
-            aboutOffer: "本服务实时生成针对恋爱、商务、家庭关系等日常各种情况的话术。<br><br>1. <strong>多样化角色:</strong> 从正式的商务语气到亲切的日常用语，甚至古风，您可以选择适合情况的语调。<br>2. <strong>个性化定制:</strong> 指定接收对象并包含关键词，即可生成更精致、更个性化的句子。<br>3. <strong>实时AI引擎:</strong> 并非随机显示固定模板，而是由最新的AI引擎根据您输入的条件每次创作新的句子。",
+            aboutOffer: "本服务实时生成针对恋爱、商务、家庭关系等各种话术。<br><br>1. <strong>多样化角色:</strong> 从正式语气到日常用语。<br>2. <strong>个性化定制:</strong> 指定接收对象和关键词。<br>3. <strong>实时AI引擎:</strong> 每次创作新的句子。",
             aboutSubTitle3: "开发者故事",
-            aboutDeveloper: "该项目由一位怀揣“用技术连接人心”愿景的独立开发者运营。用户的每一个反馈都是服务发展的巨大动力。我们将持续更新，努力成长为涵盖更多场景和情感的服务。"
+            aboutDeveloper: "该项目由一位怀揣“用技术连接人心”愿景的独立开发者运营。"
           },
           contact: {
             title: "联系我们 - 话术生成器",
             description: "咨询与反馈",
             contactTitle: "联系我们",
             contactSubTitle: "咨询与反馈",
-            contactDescription: "在使用服务过程中有任何不便、改进想法 or 有趣的建议吗？我们随时欢迎您的声音。我们将仔细审查您的反馈，并努力将其反映在服务中。",
+            contactDescription: "在使用服务过程中有任何不便或建议吗？我们随时欢迎您的声音。",
             contactEmail: "请通过以下电子邮件联系我们，我们将尽快答复。",
             emailLink: "bws96g@gmail.com"
           },
@@ -873,16 +896,16 @@ const translations = {
             title: "隐私政策 - 话术生成器",
             description: "个人信息收集与使用",
             privacyTitle: "隐私政策",
-            privacyIntro: "“话术生成器”（以下简称“服务”）将保护用户的个人信息放在首位，并遵守相关法律法规。本政策旨在透明地公开您的宝贵信息是如何被处理的。",
+            privacyIntro: "“场景化话术生成器”（以下简称“服务”）将保护用户的个人信息放在首位。",
             privacySubTitle1: "1. 信息收集",
-            privacyItem1: "本服务无需注册即可使用，仅收集最少的信息以提供服务。<br><br><strong>[自动收集]</strong><br>- Cookie、使用记录、访问日志、IP地址、设备信息。<br>- 通过Google Analytics和Microsoft Clarity等工具收集匿名的使用行为信息。<br><br><strong>[用户输入]</strong><br>- 为生成句子而输入的“接收对象”、“关键词”、“场景设置”等数据会暂时传输以进行AI处理，但不会永久存储在服务器上。",
-            privacyItem1_2: "<strong>[本地存储]</strong><br>- “主题”和“语言”设置存储在您浏览器的localStorage中，不会发送到服务器。",
+            privacyItem1: "本服务无需注册，仅收集最少的信息。<br><br><strong>[自动收集]</strong><br>- Cookie、访问日志、IP地址、设备信息。<br><br><strong>[用户输入]</strong><br>- 数据会暂时传输以进行AI处理，但不会存储。",
+            privacyItem1_2: "<strong>[本地存储]</strong><br>- 设置存储在localStorage中，不会发送到服务器。",
             privacySubTitle2: "2. 使用目的",
-            privacyPurpose: "收集的信息仅用于：<br>- 提供AI句子生成服务并提高质量<br>- 分析使用统计<br>- 通过Google AdSense投放广告<br>- 修复错误并加强安全性",
+            privacyPurpose: "仅用于提供AI句子生成、统计分析、广告投放及安全强化。",
             privacySubTitle3: "3. 第三方提供",
-            privacyRetention: "除用于统计分析和广告投放外，我们不向外部提供个人信息。<br>- <strong>Google:</strong> Analytics, AdSense<br>- <strong>Microsoft:</strong> Clarity<br><br>用户可以通过浏览器设置拒绝Cookie收集。",
+            privacyRetention: "为分析和广告可能使用Google或Microsoft的外部工具。",
             privacySubTitle4: "4. 数据销毁",
-            privacyChanges: "个人信息在达到收集和使用目的后，原则上将立即销毁。",
+            privacyChanges: "信息在达到目的后将立即销毁。",
             privacyEffectiveDate: "生效日期：2026年1月20일"
           }
       }
