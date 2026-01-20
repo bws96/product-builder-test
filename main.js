@@ -79,11 +79,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Update UI text
         document.querySelectorAll('[data-i18n]').forEach(elem => {
             const key = elem.getAttribute('data-i18n');
+            let translationText = '';
+            
             if (translation.ui[key]) {
-                elem.innerText = translation.ui[key]; // Use textContent to avoid XSS if using innerHTML
+                translationText = translation.ui[key];
+                elem.innerText = translationText;
             } else if (translation.pages && document.body.dataset.page && translation.pages[document.body.dataset.page] && translation.pages[document.body.dataset.page][key]) {
-                 // Check if it's a page specific key
-                 elem.innerHTML = translation.pages[document.body.dataset.page][key];
+                translationText = translation.pages[document.body.dataset.page][key];
+                elem.innerHTML = translationText;
+            }
+
+            // If it's the email link, also update the href
+            if (key === 'emailLink' && elem.tagName === 'A') {
+                elem.href = `mailto:${translationText}`;
             }
         });
         
