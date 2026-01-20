@@ -155,8 +155,25 @@ document.addEventListener('DOMContentLoaded', async () => {
     const savedTheme = localStorage.getItem('theme') || 'light';
     applyTheme(savedTheme);
 
-    // Load saved language or default to Korean
-    const savedLang = localStorage.getItem('language') || 'ko';
+    // Load saved language or detect automatically
+    let savedLang = localStorage.getItem('language');
+    
+    if (!savedLang) {
+        // First time visitor: Detect browser language
+        const browserLang = navigator.language.toLowerCase();
+        
+        if (browserLang.startsWith('ko')) {
+            savedLang = 'ko';
+        } else if (browserLang.startsWith('ja')) {
+            savedLang = 'ja';
+        } else if (browserLang.startsWith('zh')) {
+            savedLang = 'zh';
+        } else {
+            savedLang = 'en'; // Default for other countries
+        }
+        localStorage.setItem('language', savedLang);
+    }
+    
     setLanguage(savedLang);
 
     // Initial sub-category population
