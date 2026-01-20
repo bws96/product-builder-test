@@ -48,16 +48,41 @@
             <section class="content-card">
                 <div class="box">
                     <label data-i18n="categoryLabel">상황 선택</label>
-                    <select id="category">
+                    <select id="category" onchange="updateSubCategories()">
                         <option value="love" data-i18n="categoryLove">연애</option>
                         <option value="work" data-i18n="categoryWork">회사 / 사회생활</option>
+                        <option value="family" data-i18n="categoryFamily">가족 / 친척</option>
+                        <option value="school" data-i18n="categorySchool">학교 / 학업</option>
+                        <option value="transaction" data-i18n="categoryTransaction">거래 / 소비</option>
+                        <option value="friend" data-i18n="categoryFriend">친구 / 지인</option>
                     </select>
+
+                    <label data-i18n="subCategoryLabel">세부 상황</label>
+                    <select id="sub-category">
+                        <!-- Populated by JavaScript -->
+                    </select>
+
+                    <label data-i18n="recipientLabel">듣는 사람 (선택)</label>
+                    <input type="text" id="recipient" placeholder="예: 엄마, 김대리님, 교수님" class="input-field">
+
+                    <label data-i18n="keywordLabel">포함할 키워드 (선택)</label>
+                    <input type="text" id="keyword" placeholder="예: 미안해, 야근, 돈" class="input-field">
 
                     <label data-i18n="toneLabel">말투 선택</label>
                     <select id="tone">
-                        <option value="polite" data-i18n="tonePolite">정중하게</option>
+                        <option value="polite" data-i18n="tonePolite">정중하게 (기본)</option>
                         <option value="casual" data-i18n="toneCasual">부드럽게</option>
                         <option value="honest" data-i18n="toneHonest">솔직하게</option>
+                        <option value="firm" data-i18n="toneFirm">단호하게</option>
+                        <option value="witty" data-i18n="toneWitty">재치있게</option>
+                        <option value="concise" data-i18n="toneConcise">짧고 굵게</option>
+                        <option value="detailed" data-i18n="toneDetailed">구구절절하게</option>
+                        <option value="polite_plus" data-i18n="tonePolitePlus">쿠션어 가득 (극존칭)</option>
+                        <option value="supportive" data-i18n="toneSupportive">응원/우쭈쭈</option>
+                        <option value="cute" data-i18n="toneCute">애교 섞인</option>
+                        <option value="robot" data-i18n="toneRobot">AI/로봇 말투</option>
+                        <option value="historical" data-i18n="toneHistorical">사극 말투</option>
+                        <option value="mz" data-i18n="toneMZ">MZ/유행어</option>
                     </select>
 
                     <button id="generate-btn" class="main-button" onclick="generateText()" data-i18n="generateButton">문장 생성하기</button>
