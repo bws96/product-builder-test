@@ -50,9 +50,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 15px 0;
   margin-bottom: 30px;
   gap: 15px;
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color-light);
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+body.dark-mode .site-header {
+  background-color: var(--background-color-dark);
 }
 
 .site-title {
