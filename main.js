@@ -200,9 +200,20 @@ const translations = {
         heroTitle: "상황별 맞춤 문장 생성기",
         heroDescription: "어떠한 상황에서도 바로 쓸 수 있는 문장을 만들어드립니다!",
         navHome: "홈",
+        navTips: "소개 및 가이드",
         navAbout: "소개",
         navContact: "연락처",
         navPrivacy: "개인정보처리방침",
+        
+        // 메인 하단 정보
+        infoTitle1: "왜 상황별 맞춤 문장이 필요한가요?",
+        infoDesc1: "현대 사회에서 비대면 소통(카톡, DM, 메일)의 비중이 높아지면서, 적절한 단어 선택 하나가 관계의 성패를 결정짓기도 합니다. '상황별 맞춤 문장 생성기'는 단순한 텍스트 전달을 넘어, 상대방과의 심리적 거리와 상황의 맥락과 감정선까지 고려한 최적의 표현을 제안함으로써 사용자 여러분의 소중한 의사소통을 지원합니다.",
+        tipTitle1: "💡 소통의 핵심 원칙",
+        tip1: "<strong>역지사지:</strong> 상대방의 입장에서 문장을 다시 한번 읽어보세요.",
+        tip2: "<strong>톤 앤 매너:</strong> 상황에 맞는 말투(정중함, 친근함 등) 설정이 중요합니다.",
+        tip3: "<strong>명확한 의도:</strong> 돌려 말하기보다는 핵심을 예의 바르게 전달하세요.",
+        faqTitle: "❓ 자주 묻는 질문",
+
         categoryLabel: "상황 선택",
         categoryLove: "연애 / 썸",
         categoryWork: "회사 / 사회생활",
@@ -310,6 +321,15 @@ const translations = {
               title: "상황별 맞춤 문장 생성기",
               description: "연애, 회사, 가족, 학교 등 다양한 상황에서 쓸 수 있는 문장을 생성합니다."
           },
+          tips: {
+            tipsTitle: "완벽한 소통을 위한 가이드",
+            article1Title: "1. 비대면 대화의 한계를 극복하는 법",
+            article1Content: "텍스트 기반의 대화는 비언어적 요소(표정, 목소리 톤)가 배제되어 오해의 소지가 많습니다. 이를 극복하기 위해서는 '쿠션어'의 사용이 필수적입니다. '안 돼요'라고 말하기보다 '정말 도와드리고 싶지만, 현재 상황상...'과 같은 표현을 사용하는 것만으로도 대화의 온도가 달라집니다.",
+            article2Title: "2. 관계를 망치지 않는 건강한 거절",
+            article2Content: "거절은 '상대방'을 거절하는 것이 아니라 '요청'을 거절하는 것임을 명확히 해야 합니다. 미안한 마음을 충분히 표현하되, 불가능한 이유를 간결하게 덧붙이세요. 우리 서비스의 '단호하게' 또는 '구구절절하게' 옵션을 활용하면 상황에 맞는 적절한 거절 문구를 찾을 수 있습니다.",
+            article3Title: "3. 사과의 정석: 변명 없는 진심",
+            article3Content: "좋은 사과에는 세 가지 요소가 필요합니다: 유감 표명, 책임 인정, 보상 방안 제시입니다. '만약 기분이 나빴다면 미안해'라는 식의 가정법 사과는 오히려 관계를 악화시킵니다. '내 실수가 너에게 상처가 되었을 것 같아 미안해'라는 식의 직접적인 표현이 필요합니다."
+          },
           about: {
             title: "소개 - 상황별 문장 생성기",
             description: "프로젝트 소개 및 비전",
@@ -354,9 +374,19 @@ const translations = {
         heroTitle: "Situation-Based Sentence Generator",
         heroDescription: "We create proper sentences for any situation instantly!",
         navHome: "Home",
+        navTips: "Guide",
         navAbout: "About",
         navContact: "Contact",
         navPrivacy: "Privacy Policy",
+        
+        infoTitle1: "Why Situation-Based Sentences?",
+        infoDesc1: "As online communication grows, choosing the right words determines relationship success. Our AI analyzes distance and context to suggest the best expressions.",
+        tipTitle1: "💡 Core Principles",
+        tip1: "<strong>Empathy:</strong> Read the sentence from the other person's view.",
+        tip2: "<strong>Tone:</strong> Setting the right tone (formal, casual) is key.",
+        tip3: "<strong>Clarity:</strong> Convey your intent politely and clearly.",
+        faqTitle: "❓ FAQ",
+
         categoryLabel: "Select Situation",
         categoryLove: "Dating / Love",
         categoryWork: "Work / Business",
@@ -464,6 +494,15 @@ const translations = {
               title: "Situation-Based Sentence Generator",
               description: "Generate appropriate sentences for dating, work, family, and more."
           },
+          tips: {
+            tipsTitle: "Communication Guide",
+            article1Title: "1. Overcoming Digital Limits",
+            article1Content: "Text lacks non-verbal cues. Use 'cushion words' to soften the impact.",
+            article2Title: "2. Healthy Rejection",
+            article2Content: "Make it clear you are rejecting the request, not the person.",
+            article3Title: "3. The Art of Apology",
+            article3Content: "Admit responsibility and avoid 'if' statements."
+          },
           about: {
             title: "About - Sentence Generator",
             description: "Mission and Vision of the Project",
@@ -508,9 +547,19 @@ const translations = {
         heroTitle: "シチュエーション别メッセージ生成",
         heroDescription: "気まずい状況ですぐに使える最适な文章を作成します。",
         navHome: "ホーム",
+        navTips: "ガイド",
         navAbout: "紹介",
         navContact: "お問い合わせ",
         navPrivacy: "プライバシー",
+        
+        infoTitle1: "なぜ状況別メッセージが必要なのですか？",
+        infoDesc1: "オンラインコミュニケーションが増える中、適切な言葉選びが関係の成否を分けます。当サービスはAIを活用し、最適な表現を提案します。",
+        tipTitle1: "💡 コミュニケーションの原則",
+        tip1: "<strong>思いやり:</strong> 相手の立場で文章を読み返してみましょう。",
+        tip2: "<strong>トーン:</strong> 正しいトーン（丁寧、カジュアル）の設定が重要です。",
+        tip3: "<strong>明快さ:</strong> 意図を丁寧に、かつはっきりと伝えましょう。",
+        faqTitle: "❓ よくある質問",
+
         categoryLabel: "状況を選択",
         categoryLove: "恋愛 / 썸",
         categoryWork: "仕事・職場",
@@ -618,6 +667,15 @@ const translations = {
               title: "シチュエーション別メッセージ生成",
               description: "恋愛、仕事、家族など、様々な状況に合わせた文章を自動生成します。"
           },
+          tips: {
+            tipsTitle: "コミュニケーションガイド",
+            article1Title: "1. デジタル制限の克服",
+            article1Content: "テキストには非言語的な合図がありません。影響を和らげるために「クッション言葉」を使用してください。",
+            article2Title: "2. 健康的な拒絶",
+            article2Content: "人ではなく、リクエストを拒否していることを明確にしてください。",
+            article3Title: "3. 謝罪の技術",
+            article3Content: "責任を認め、「もし〜なら」という発言は避けてください。"
+          },
           about: {
             title: "紹介 - メッセージ生成AI",
             description: "プロジェクトのミッションとビジョン",
@@ -645,14 +703,14 @@ const translations = {
             privacyIntro: "「メッセージ生成AI」（以下「本サービス」）は、ユーザーの個人情報保護を最優先に考え、関連法令を遵守します。本方針は、ユーザーの大切な情報がどのように扱われるかを透明に公開するために作成されました。",
             privacySubTitle1: "1. 収集する個人情報項目",
             privacyItem1: "本サービスは会員登録なしで利用可能であり、サービス提供のために最小限の情報のみを収集します。<br><br><strong>[自動収集情報]</strong><br>- クッキー(Cookie)、利用記録、アクセスログ、IPアドレス、端末情報。<br>- Google AnalyticsやMicrosoft Clarity等の分析ツールを通じて匿名化された利用行動情報が収集される場合があります。<br><br><strong>[ユーザー入力情報]</strong><br>- 文章生成のために入力された「相手」、「キーワード」、「状況設定」などの データは、AI処理のために一時的に送信されますが、サーバーに永久保存されることはありません。",
-            privacyItem1_2: "<strong>[ローカルストレージ]</strong><br>- 「テーマ設定」および「言語設定」はブラウザのlocalStorage에 저장되며、이는 서버로 전송되지 않고 사용자의 기기에만 남습니다.",
+            privacyItem1_2: "<strong>[ローカルストレージ]</strong><br>- 「テーマ設定」および「言語設定」はブラウザのlocalStorageに保存され、サーバーには送信されません。",
             privacySubTitle2: "2. 利用目的",
             privacyPurpose: "収集された情報は以下の目的でのみ使用されます。<br>- AI文章生成サービスの提供および品質向上<br>- 利用統計の分析<br>- Google AdSenseを通じた広告配信<br>- サービスのエラー修正およびセキュリティ強化",
             privacySubTitle3: "3. 第三者への提供",
-            privacyRetention: "統計分析および広告配信のために以下の外部ツールを使用する場合を除き、個人 정보를 外部に提供しません。<br>- <strong>Google:</strong> Analytics, AdSense<br>- <strong>Microsoft:</strong> Clarity<br><br>ユーザーはブラウザの設定でクッキーの収集を拒否できます。",
+            privacyRetention: "統計分析および広告配信のために以下の外部ツールを使用する場合を除き、個人情報を外部に提供しません。<br>- <strong>Google:</strong> Analytics, AdSense<br>- <strong>Microsoft:</strong> Clarity<br><br>ユーザーはブラウザの設定でクッキーの収集を拒否できます。",
             privacySubTitle4: "4. 個人情報の破棄",
             privacyChanges: "個人情報は、収集および利用目的が達成された後は遅滞なく破棄することを原則とします。",
-            privacyEffectiveDate: "施行日: 2026년 1월 20일"
+            privacyEffectiveDate: "施行日: 2026年1月20일"
           }
       }
     },
@@ -662,9 +720,19 @@ const translations = {
         heroTitle: "场景化话术生成器",
         heroDescription: "为您立刻生成尴尬场合下恰当的回复。",
         navHome: "首页",
+        navTips: "指南",
         navAbout: "关于",
         navContact: "联系我们",
         navPrivacy: "隐私政策",
+        
+        infoTitle1: "为什么需要场景化话术？",
+        infoDesc1: "随着在线沟通的增加，选择合适的词汇决定了关系的成败。我们的AI通过分析语境提供最佳表达。",
+        tipTitle1: "💡 沟通原则",
+        tip1: "<strong>共情:</strong> 从对方的角度重新阅读句子。",
+        tip2: "<strong>语气:</strong> 设定正确的语气（正式、随意）是关键。",
+        tip3: "<strong>清晰:</strong> 礼貌且清晰地传达你的意图。",
+        faqTitle: "❓ 常见问题",
+
         categoryLabel: "选择场景",
         categoryLove: "恋爱 / 情感",
         categoryWork: "职场 / 社交",
@@ -772,6 +840,15 @@ const translations = {
               title: "场景化话术生成器",
               description: "自动生成适用于恋爱、职场、家庭等多种场合的回复。"
           },
+          tips: {
+            tipsTitle: "沟通指南",
+            article1Title: "1. 克服数字限制",
+            article1Content: "文本缺乏非语言暗示。使用“垫后语”来软化冲击。",
+            article2Title: "2. 健康的拒绝",
+            article2Content: "明确表示你是在拒绝请求，而不是拒绝人。",
+            article3Title: "3. 道歉的艺术",
+            article3Content: "承认责任，避免使用“如果”之类的陈述。"
+          },
           about: {
             title: "关于 - 话术生成器",
             description: "项目介绍与愿景",
@@ -788,7 +865,7 @@ const translations = {
             description: "咨询与反馈",
             contactTitle: "联系我们",
             contactSubTitle: "咨询与反馈",
-            contactDescription: "在使用服务过程中有任何不便、改进想法或有趣的建议吗？我们随时欢迎您的声音。我们将仔细审查您的反馈，并努力将其反映在服务中。",
+            contactDescription: "在使用服务过程中有任何不便、改进想法 or 有趣的建议吗？我们随时欢迎您的声音。我们将仔细审查您的反馈，并努力将其反映在服务中。",
             contactEmail: "请通过以下电子邮件联系我们，我们将尽快答复。",
             emailLink: "bws96g@gmail.com"
           },
