@@ -403,6 +403,26 @@ select {
 
 /* Dark Mode Overrides */
 body.dark-mode { background-color: var(--background-color-dark); color: var(--text-color-dark); }
+
+body.dark-mode .sidebar {
+  background-color: var(--card-background-dark);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .sidebar-header,
+body.dark-mode .sidebar-nav a {
+  border-color: var(--border-color-dark);
+  color: var(--text-color-dark);
+}
+
+body.dark-mode .close-btn {
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .sidebar-nav a:hover {
+    color: var(--primary-color);
+}
+
 body.dark-mode .site-title, 
 body.dark-mode .hero-title,
 body.dark-mode .main-content .box h2 { color: var(--text-color-dark); }
