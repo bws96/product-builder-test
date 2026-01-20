@@ -377,6 +377,8 @@ async function generateText() {
     const recipient = document.getElementById("recipient").value;
     const keywords = document.getElementById("keyword").value;
 
+    const politeness = document.getElementById("politeness")?.value || "auto";
+
     const resultBox = document.getElementById("resultBox");
     const resultText = document.getElementById("resultText");
     const generateBtn = document.getElementById("generate-btn");
@@ -394,15 +396,14 @@ async function generateText() {
         
         const response = await fetch(WORKER_URL, {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 category: category,
                 subCategory: subCategory,
                 tone: tone,
                 recipient: recipient,
                 keyword: keywords,
+                politeness: politeness, // ★ 이 값을 서버로 보냅니다!
                 lang: lang
             })
         });
