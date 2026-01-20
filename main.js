@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             
             // Re-attach event listeners for dynamic elements
             const themeToggle = document.getElementById('theme-toggle');
-            const languageSelector = document.getElementById('language-selector');
+            const languageBtn = document.getElementById('language-btn');
+            const languageMenu = document.getElementById('language-menu');
 
             if (themeToggle) {
                 themeToggle.addEventListener('click', () => {
@@ -26,13 +27,33 @@ document.addEventListener('DOMContentLoaded', async () => {
                 });
             }
 
-            if (languageSelector) {
-                languageSelector.addEventListener('change', (event) => {
-                    setLanguage(event.target.value);
+            if (languageBtn && languageMenu) {
+                languageBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    languageMenu.classList.toggle('active');
                 });
-                // Set initial value
+
+                languageMenu.querySelectorAll('li').forEach(item => {
+                    item.addEventListener('click', () => {
+                        const selectedLang = item.getAttribute('data-value');
+                        setLanguage(selectedLang);
+                        languageMenu.classList.remove('active');
+                        
+                        // Update UI to show selected state
+                        languageMenu.querySelectorAll('li').forEach(li => li.classList.remove('selected'));
+                        item.classList.add('selected');
+                    });
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', () => {
+                    languageMenu.classList.remove('active');
+                });
+                
+                // Set initial selected state in menu
                 const savedLang = localStorage.getItem('language') || 'ko';
-                languageSelector.value = savedLang;
+                const initialItem = languageMenu.querySelector(`li[data-value="${savedLang}"]`);
+                if (initialItem) initialItem.classList.add('selected');
             }
 
         } catch (error) {
@@ -175,7 +196,7 @@ const translations = {
       ui: {
         siteTitle: "문장 생성기",
         heroTitle: "상황별 맞춤 문장 생성기",
-        heroDescription: "어색한 상황에서 바로 써먹을 문장을 만들어드립니다",
+        heroDescription: "어떠한 상황에서도 바로 쓸 수 있는 문장을 만들어드립니다!",
         navHome: "홈",
         navAbout: "소개",
         navContact: "연락처",
