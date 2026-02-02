@@ -232,6 +232,11 @@ const translations = {
         tip1: "<strong>역지사지:</strong> 상대방의 입장에서 문장을 다시 한번 읽어보세요.",
         tip2: "<strong>톤 앤 매너:</strong> 상황에 맞는 말투(정중함, 친근함 등) 설정이 중요합니다.",
         tip3: "<strong>명확한 의도:</strong> 돌려 말하기보다는 핵심을 예의 바르게 전달하세요.",
+        howToUseTitle: "📝 생성기 200% 활용하기",
+        howToUseDesc: "단순한 문장 생성을 넘어, 상황에 딱 맞는 결과를 얻는 팁을 알려드립니다.",
+        howToUse1: "<strong>키워드는 구체적으로:</strong> '미안해'보다는 '늦어서 미안해'처럼 구체적인 상황을 키워드로 넣으면 더 자연스러운 문장이 나옵니다.",
+        howToUse2: "<strong>상대방 호칭 입력:</strong> '김대리님', '자기야' 등 평소 부르는 호칭을 입력하면 AI가 문맥을 더 잘 파악합니다.",
+        howToUse3: "<strong>여러 말투 시도해보기:</strong> 같은 상황이라도 '재치있게'와 '진지하게'의 결과는 전혀 다릅니다. 관계의 깊이에 따라 다양한 톤을 실험해보세요.",
         faqTitle: "❓ 자주 묻는 질문 (FAQ)",
         faqQ1: "Q: AI가 만든 문장을 그대로 써도 되나요?",
         faqA1: "A: 네, 하지만 입력하신 '듣는 사람'과 '키워드'를 바탕으로 생성되므로, 마지막에 자신의 진심을 한 스푼 더하는 것을 권장합니다.",
@@ -358,7 +363,9 @@ const translations = {
             article3Title: "3. 사과의 정석: 변명 없는 진심",
             article3Content: "좋은 사과에는 세 가지 요소가 필요합니다: 유감 표명, 책임 인정, 보상 방안 제시입니다. '만약 기분이 나빴다면 미안해'라는 식의 가정법 사과는 오히려 관계를 악화시킵니다.",
             article4Title: "4. 직장 내 소통: 보고와 피드백의 기술",
-            article4Content: "상사나 동료와의 대화에서는 '결론부터' 말하는 두괄식 화법이 핵심입니다. 하지만 결론만 말하면 자칫 공격적으로 보일 수 있으므로, 상황별 맞춤 문장 생성기의 '정중하게' 옵션을 활용해 앞뒤에 적절한 인사와 양해를 구하는 문구를 배치하는 것이 좋습니다."
+            article4Content: "상사나 동료와의 대화에서는 '결론부터' 말하는 두괄식 화법이 핵심입니다. 하지만 결론만 말하면 자칫 공격적으로 보일 수 있으므로, 상황별 맞춤 문장 생성기의 '정중하게' 옵션을 활용해 앞뒤에 적절한 인사와 양해를 구하는 문구를 배치하는 것이 좋습니다.",
+            article5Title: "5. 메시지 전송의 골든타임: 타이밍이 반이다",
+            article5Content: "아무리 좋은 내용이라도 언제 보내느냐에 따라 결과는 천지차이입니다. 중요한 부탁이나 사과 메시지는 상대방이 여유로운 시간대를 공략하는 것이 좋습니다. 반면, 늦은 밤이나 이른 아침의 연락은 긴급한 일이 아니라면 피해야 하며, 불가피할 경우 쿠션어를 반드시 포함해야 합니다."
           },
           about: {
             title: "소개 - 상황별 문장 생성기",
@@ -415,6 +422,11 @@ const translations = {
         tip1: "<strong>Empathy:</strong> Put yourself in their shoes before sending.",
         tip2: "<strong>Tone:</strong> Setting the right tone (formal, casual) is vital.",
         tip3: "<strong>Clarity:</strong> Convey your intent politely and directly.",
+        howToUseTitle: "📝 Tips for Best Results",
+        howToUseDesc: "Here are some tips to get the perfect sentence for your situation.",
+        howToUse1: "<strong>Be Specific with Keywords:</strong> Instead of just 'Sorry', try 'Sorry for being late' to get more natural results.",
+        howToUse2: "<strong>Enter Recipient:</strong> Inputting a name or title (e.g., 'Mr. Kim', 'Honey') helps AI understand the context better.",
+        howToUse3: "<strong>Try Different Tones:</strong> The same situation can sound very different depending on the tone. Experiment with 'Witty' or 'Serious' options.",
         faqTitle: "❓ FAQ",
         faqQ1: "Q: Can I use AI-generated sentences as they are?",
         faqA1: "A: Yes, but since they are based on your input, we recommend adding a touch of your own sincerity.",
@@ -541,7 +553,9 @@ const translations = {
             article3Title: "3. The Art of Apology",
             article3Content: "Three elements are needed: regret, admitting responsibility, and offering compensation.",
             article4Title: "4. Workplace Communication",
-            article4Content: "The key is the 'conclusion first' method. Use the 'Polite' option to avoid appearing aggressive."
+            article4Content: "The key is the 'conclusion first' method. Use the 'Polite' option to avoid appearing aggressive.",
+            article5Title: "5. The Golden Time for Messaging",
+            article5Content: "Timing is everything. Send important requests or apologies when the recipient is likely relaxed. Avoid late nights or early mornings unless urgent, and always apologize for the intrusion if you must."
           },
           about: {
             title: "About Us - Sentence Generator",
@@ -598,6 +612,11 @@ const translations = {
         tip1: "<strong>思いやり:</strong> 相手の立場で文章を読み返してみましょう。",
         tip2: "<strong>トーン:</strong> 正しいトーン（丁寧、カジュアル）の設定が重要です。",
         tip3: "<strong>明快さ:</strong> 意図を丁寧に、かつはっきりと伝えましょう。",
+        howToUseTitle: "📝 活用へのヒント",
+        howToUseDesc: "単なる文章生成を超えて、状況にぴったりの結果を得るためのコツをお教えします。",
+        howToUse1: "<strong>キーワードは具体的に:</strong> 「ごめん」より「遅れてごめん」のように具体的な状況を入れると、より自然な文章になります。",
+        howToUse2: "<strong>相手の呼び名を入力:</strong> 「〇〇さん」「あなた」など、普段呼んでいる名前を入れると、AIが文脈をよりよく理解します。",
+        howToUse3: "<strong>様々なトーンを試す:</strong> 同じ状況でも「ユーモア」と「真剣」では結果が全く異なります。関係の深さに応じて試してみてください。",
         faqTitle: "❓ よくある質問 (FAQ)",
         faqQ1: "Q: AIが生成した文章をそのまま使ってもいいですか？",
         faqA1: "A: はい、可能ですが、入力した条件に基づいているため、最後に一言真心を添えることをお勧めします。",
@@ -724,7 +743,9 @@ const translations = {
             article3Title: "3. 謝罪の技術",
             article3Content: "3つの要素が必要です：遺憾の表明、責任の承認、補償案の提示。「もし気分を害したなら」のような仮定法は避け、責任を認める直接的な表現を使いましょう。",
             article4Title: "4. 職場での対話",
-            article4Content: "結論から話すのが鍵です。「丁寧」オプションを使用して、前後に適切な挨拶や配慮を加えることで、攻撃的に見えるのを防ぎます。"
+            article4Content: "結論から話すのが鍵です。「丁寧」オプションを使用して、前後に適切な挨拶や配慮を加えることで、攻撃的に見えるのを防ぎます。",
+            article5Title: "5. メッセージ送信のゴールデンタイム",
+            article5Content: "タイミングが全てです。重要な依頼や謝罪は、相手がリラックスしている時間帯に送りましょう。深夜や早朝は緊急でない限り避け、やむを得ない場合は必ずクッション言葉を添えましょう。"
           },
           about: {
             title: "紹介 - メッセージ生成AI",
@@ -781,6 +802,11 @@ const translations = {
         tip1: "<strong>共情:</strong> 从对方的角度重新阅读句子。",
         tip2: "<strong>语气:</strong> 设定正确的语气（正式、随意）是关键。",
         tip3: "<strong>清晰:</strong> 礼貌且清晰地传达你的意图。",
+        howToUseTitle: "📝 使用技巧",
+        howToUseDesc: "不仅仅是生成句子，这里有一些获得完美结果的小贴士。",
+        howToUse1: "<strong>关键词要具体:</strong> 输入“迟到抱歉”比单纯的“抱歉”能生成更自然的句子。",
+        howToUse2: "<strong>输入称呼:</strong> 输入“金经理”、“亲爱的”等平时使用的称呼，有助于AI更好地理解语境。",
+        howToUse3: "<strong>尝试不同语气:</strong> 即使是相同的情况，使用“幽默”或“真诚”的语气，结果也会截然不同。",
         faqTitle: "❓ 常见问题 (FAQ)",
         faqQ1: "Q: 我可以直接使用AI生成的句子吗？",
         faqA1: "A: 是的，但由于它们是根据您的输入生成的，我们建议加入一点您自己的真心。",
@@ -907,7 +933,9 @@ const translations = {
             article3Title: "3. 道歉的艺术",
             article3Content: "需要三个要素：表示遗憾、承认责任、提供补偿。避免使用“如果”之类的陈述。",
             article4Title: "4. 职场沟通",
-            article4Content: "关键是“结论先行”。使用“礼貌”选项添加适当的问候。"
+            article4Content: "关键是“结论先行”。使用“礼貌”选项添加适当的问候。",
+            article5Title: "5. 发送消息的黄金时间",
+            article5Content: "时机就是一切。在对方放松的时候发送重要的请求或道歉。除非紧急情况，否则避免在深夜或清晨发送，如果必须发送，一定要加上歉意。"
           },
           about: {
             title: "关于 - 话术生成器",
