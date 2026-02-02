@@ -1004,18 +1004,28 @@ async function generateText() {
     try {
         const WORKER_URL = "https://usgetchat.bws96.workers.dev/"; 
         
+        // Ensure subCategory is not empty if possible
+        let finalSubCategory = subCategory;
+        if (!finalSubCategory && subCategoryMap[category] && subCategoryMap[category].length > 0) {
+             finalSubCategory = subCategoryMap[category][0];
+        }
+
+        const payload = {
+            category: category,
+            subCategory: finalSubCategory,
+            tone: tone,
+            recipient: recipient,
+            keywords: keywords, // Changed key to 'keywords' (plural)
+            politeness: politeness,
+            lang: lang
+        };
+
+        console.log("Sending payload:", payload);
+
         const response = await fetch(WORKER_URL, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                category: category,
-                subCategory: subCategory,
-                tone: tone,
-                recipient: recipient,
-                keyword: keywords,
-                politeness: politeness,
-                lang: lang
-            })
+            body: JSON.stringify(payload)
         });
 
         if (!response.ok) {
