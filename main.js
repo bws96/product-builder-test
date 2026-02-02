@@ -1015,7 +1015,7 @@ async function generateText() {
             subCategory: finalSubCategory,
             tone: tone,
             recipient: recipient,
-            keywords: keywords, // Changed key to 'keywords' (plural)
+            keyword: keywords, // Revert key to 'keyword' (singular)
             politeness: politeness,
             lang: lang
         };
@@ -1029,7 +1029,19 @@ async function generateText() {
         });
 
         if (!response.ok) {
-            throw new Error("Network response was not ok");
+            let errorMessage = "Network response was not ok";
+            try {
+                const errorData = await response.json();
+                console.error("Server Error Details:", errorData);
+                if (errorData.error) {
+                    errorMessage = typeof errorData.error === 'string' ? errorData.error : JSON.stringify(errorData.error);
+                } else if (errorData.message) {
+                    errorMessage = errorData.message;
+                }
+            } catch (e) {
+                console.error("Could not parse error response:", e);
+            }
+            throw new Error(errorMessage);
         }
 
         const data = await response.json();
