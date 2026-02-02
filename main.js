@@ -1033,8 +1033,14 @@ async function generateText() {
             try {
                 const errorData = await response.json();
                 console.error("Server Error Details:", errorData);
+                
                 if (errorData.error) {
                     errorMessage = typeof errorData.error === 'string' ? errorData.error : JSON.stringify(errorData.error);
+                    
+                    // Check for detailed quota error
+                    if (errorData.details && errorData.details.error && errorData.details.error.message) {
+                        errorMessage += `: ${errorData.details.error.message}`;
+                    }
                 } else if (errorData.message) {
                     errorMessage = errorData.message;
                 }
